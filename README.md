@@ -47,6 +47,6 @@ powershell -ExecutionPolicy Bypass -File scripts/bootstrap.ps1
 
 ## 阅读与复现
 
-[40 分钟技术面讲稿 · PDF](docs/AlignLab-Interview-40min.pdf) · [可编辑讲稿](docs/INTERVIEW_40MIN.md) · [固定验收范围](docs/PROGRESS.md)
+[第一人称面试逐字稿 · PDF](docs/AlignLab-Interview-40min.pdf) · [可编辑讲稿](docs/INTERVIEW_40MIN.md) · [固定验收范围](docs/PROGRESS.md)
 
 本公开版本取自开发快照 `45a6e12755804bfdee7532c9fd48bdd28a5c5271`。实验文件记录当时的代码版本、数据指纹与运行环境。公开仓库从本次发布开始记录提交。 数据证据中一处本机分词器路径已改为项目相对路径。
