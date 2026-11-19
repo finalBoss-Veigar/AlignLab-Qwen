@@ -1,0 +1,30 @@
+{
+  "scope": "5-step preflight only; not formal model performance",
+  "runs": [
+    {
+      "run_id": "20261118T153734-a0d67cf9b6",
+      "status": "completed",
+      "telemetry": {
+        "peak_vram_bytes": 8266153984,
+        "peak_vram_scope": "training_or_export_process_only_excludes_separate_preflight_audit"
+      },
+      "prompt_system_padding_mask_verified": true,
+      "source_manifest_sha256": "6bfd2a6f8c9e7db914f213fefd2155de0b43a921b9a849319426cdf0076788d0",
+      "source_audit_sha256": "10ee3132c39f097bebba226f28ca89ab9e09c564824c766bceffa1e3d3d2d2e7"
+    },
+    {
+      "run_id": "20261118T154034-19ed8740cd",
+      "status": "completed",
+      "telemetry": {
+        "peak_vram_bytes": 12797139968,
+        "peak_vram_scope": "training_or_export_process_only_excludes_separate_preflight_audit"
+      },
+      "prompt_system_padding_mask_verified": true,
+      "source_manifest_sha256": "9955a6c413e641413d904f046dc91a595bd04c42358dc082a318178679166db6",
+      "source_audit_sha256": "8e9417478d7a617d90660fbd6690262f1908c6af9707629229002905ffc03747"
+    }
+  ],
+  "checkpoint_archive_sha256": "bf26ce4ddac218c2340bd50a3824b25095d527c5795e01dd297d1f733c70b9a9",
+  "local_checkpoint_archive": "runs/cloud_20261118/preflight-checkpoints-20261118.tar.gz",
+  "baseline_archive_sha256": "36707c9637b9eb0c92812527521cfa90499b3084a6aafab81a3490cc79513ad1"
+}

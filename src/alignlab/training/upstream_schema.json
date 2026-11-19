@@ -1,0 +1,2034 @@
+{
+  "llamafactory_commit": "ca75f1edf3cb50343ed1c98605141c3e22075b5f",
+  "transformers_commit": "b99fa8251c7327130243a0b76e36d0a922492e41",
+  "transformers_version": "4.51.3",
+  "files": {
+    "vendor/LlamaFactory/src/llamafactory/hparams/data_args.py": "90fbe15fd9d4fe9975bcbad0e4c32ddde303c5417bdd026ec1b945b2b7d42e39",
+    "vendor/LlamaFactory/src/llamafactory/hparams/evaluation_args.py": "4be4a7eca938147c963c8ec94a219e5524090961ba0a0cc72a22bc7df42ff686",
+    "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py": "685166c931b8df3aafb8f0b0b7341d8af3881ca5733cd6d72d8d872e5bde406d",
+    "vendor/LlamaFactory/src/llamafactory/hparams/generating_args.py": "23b8453d233580a4a10765ae0ac5e0c15652a57b5d0e3612ad0473630a6445b4",
+    "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py": "52c429d846196e5437a19f8d7372b7aa496feee01a6dfd1a67a4006479aa9e23",
+    "vendor/LlamaFactory/src/llamafactory/hparams/training_args.py": "7185bb13605772a847181effdf87a39120333f0558c69b649448496e710b9285",
+    "vendor/transformers-4.51.3/training_args.py": "b220831249f2c79603e48056d8a26154af1070b0d5c5205914d2cd66ac7bc76e",
+    "vendor/transformers-4.51.3/training_args_seq2seq.py": "27dfef2504785715801d655b466c635c74912dde8a49ef229e2b0855ece56d72"
+  },
+  "fields": {
+    "template": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/data_args.py",
+      "line": 26,
+      "type": "Optional[str]",
+      "class": "DataArguments"
+    },
+    "dataset": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/data_args.py",
+      "line": 30,
+      "type": "Optional[str]",
+      "class": "DataArguments"
+    },
+    "eval_dataset": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/data_args.py",
+      "line": 34,
+      "type": "Optional[str]",
+      "class": "DataArguments"
+    },
+    "dataset_dir": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/data_args.py",
+      "line": 38,
+      "type": "str",
+      "class": "DataArguments"
+    },
+    "media_dir": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/data_args.py",
+      "line": 42,
+      "type": "Optional[str]",
+      "class": "DataArguments"
+    },
+    "cutoff_len": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/data_args.py",
+      "line": 46,
+      "type": "int",
+      "class": "DataArguments"
+    },
+    "train_on_prompt": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/data_args.py",
+      "line": 50,
+      "type": "bool",
+      "class": "DataArguments"
+    },
+    "mask_history": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/data_args.py",
+      "line": 54,
+      "type": "bool",
+      "class": "DataArguments"
+    },
+    "streaming": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/data_args.py",
+      "line": 58,
+      "type": "bool",
+      "class": "DataArguments"
+    },
+    "buffer_size": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/data_args.py",
+      "line": 62,
+      "type": "int",
+      "class": "DataArguments"
+    },
+    "mix_strategy": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/data_args.py",
+      "line": 66,
+      "type": "Literal['concat', 'interleave_under', 'interleave_over']",
+      "class": "DataArguments"
+    },
+    "interleave_probs": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/data_args.py",
+      "line": 70,
+      "type": "Optional[str]",
+      "class": "DataArguments"
+    },
+    "overwrite_cache": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/data_args.py",
+      "line": 74,
+      "type": "bool",
+      "class": "DataArguments"
+    },
+    "preprocessing_batch_size": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/data_args.py",
+      "line": 78,
+      "type": "int",
+      "class": "DataArguments"
+    },
+    "preprocessing_num_workers": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/data_args.py",
+      "line": 82,
+      "type": "Optional[int]",
+      "class": "DataArguments"
+    },
+    "max_samples": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/data_args.py",
+      "line": 86,
+      "type": "Optional[int]",
+      "class": "DataArguments"
+    },
+    "eval_num_beams": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/data_args.py",
+      "line": 90,
+      "type": "Optional[int]",
+      "class": "DataArguments"
+    },
+    "ignore_pad_token_for_loss": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/data_args.py",
+      "line": 94,
+      "type": "bool",
+      "class": "DataArguments"
+    },
+    "val_size": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/data_args.py",
+      "line": 98,
+      "type": "float",
+      "class": "DataArguments"
+    },
+    "eval_on_each_dataset": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/data_args.py",
+      "line": 102,
+      "type": "bool",
+      "class": "DataArguments"
+    },
+    "packing": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/data_args.py",
+      "line": 106,
+      "type": "Optional[bool]",
+      "class": "DataArguments"
+    },
+    "neat_packing": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/data_args.py",
+      "line": 110,
+      "type": "bool",
+      "class": "DataArguments"
+    },
+    "tool_format": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/data_args.py",
+      "line": 114,
+      "type": "Optional[str]",
+      "class": "DataArguments"
+    },
+    "default_system": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/data_args.py",
+      "line": 118,
+      "type": "Optional[str]",
+      "class": "DataArguments"
+    },
+    "enable_thinking": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/data_args.py",
+      "line": 122,
+      "type": "Optional[bool]",
+      "class": "DataArguments"
+    },
+    "tokenized_path": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/data_args.py",
+      "line": 126,
+      "type": "Optional[str]",
+      "class": "DataArguments"
+    },
+    "data_shared_file_system": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/data_args.py",
+      "line": 136,
+      "type": "bool",
+      "class": "DataArguments"
+    },
+    "task": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/evaluation_args.py",
+      "line": 26,
+      "type": "str",
+      "class": "EvaluationArguments"
+    },
+    "task_dir": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/evaluation_args.py",
+      "line": 29,
+      "type": "str",
+      "class": "EvaluationArguments"
+    },
+    "batch_size": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/evaluation_args.py",
+      "line": 33,
+      "type": "int",
+      "class": "EvaluationArguments"
+    },
+    "seed": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 1047,
+      "type": "int",
+      "class": "TrainingArguments"
+    },
+    "lang": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/evaluation_args.py",
+      "line": 41,
+      "type": "Literal['en', 'zh']",
+      "class": "EvaluationArguments"
+    },
+    "n_shot": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/evaluation_args.py",
+      "line": 45,
+      "type": "int",
+      "class": "EvaluationArguments"
+    },
+    "save_dir": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/evaluation_args.py",
+      "line": 49,
+      "type": "Optional[str]",
+      "class": "EvaluationArguments"
+    },
+    "download_mode": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/evaluation_args.py",
+      "line": 53,
+      "type": "DownloadMode",
+      "class": "EvaluationArguments"
+    },
+    "freeze_trainable_layers": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+      "line": 23,
+      "type": "int",
+      "class": "FreezeArguments"
+    },
+    "freeze_trainable_modules": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+      "line": 33,
+      "type": "str",
+      "class": "FreezeArguments"
+    },
+    "freeze_extra_modules": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+      "line": 43,
+      "type": "Optional[str]",
+      "class": "FreezeArguments"
+    },
+    "additional_target": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+      "line": 59,
+      "type": "Optional[str]",
+      "class": "LoraArguments"
+    },
+    "lora_alpha": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+      "line": 69,
+      "type": "Optional[int]",
+      "class": "LoraArguments"
+    },
+    "lora_dropout": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+      "line": 73,
+      "type": "float",
+      "class": "LoraArguments"
+    },
+    "lora_rank": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+      "line": 77,
+      "type": "int",
+      "class": "LoraArguments"
+    },
+    "lora_target": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+      "line": 81,
+      "type": "str",
+      "class": "LoraArguments"
+    },
+    "loraplus_lr_ratio": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+      "line": 91,
+      "type": "Optional[float]",
+      "class": "LoraArguments"
+    },
+    "loraplus_lr_embedding": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+      "line": 95,
+      "type": "float",
+      "class": "LoraArguments"
+    },
+    "use_rslora": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+      "line": 99,
+      "type": "bool",
+      "class": "LoraArguments"
+    },
+    "use_dora": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+      "line": 103,
+      "type": "bool",
+      "class": "LoraArguments"
+    },
+    "pissa_init": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+      "line": 107,
+      "type": "bool",
+      "class": "LoraArguments"
+    },
+    "pissa_iter": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+      "line": 111,
+      "type": "int",
+      "class": "LoraArguments"
+    },
+    "pissa_convert": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+      "line": 115,
+      "type": "bool",
+      "class": "LoraArguments"
+    },
+    "create_new_adapter": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+      "line": 119,
+      "type": "bool",
+      "class": "LoraArguments"
+    },
+    "pref_beta": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+      "line": 129,
+      "type": "float",
+      "class": "RLHFArguments"
+    },
+    "pref_ftx": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+      "line": 133,
+      "type": "float",
+      "class": "RLHFArguments"
+    },
+    "pref_loss": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+      "line": 137,
+      "type": "Literal['sigmoid', 'hinge', 'ipo', 'kto_pair', 'orpo', 'simpo']",
+      "class": "RLHFArguments"
+    },
+    "dpo_label_smoothing": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+      "line": 141,
+      "type": "float",
+      "class": "RLHFArguments"
+    },
+    "kto_chosen_weight": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+      "line": 145,
+      "type": "float",
+      "class": "RLHFArguments"
+    },
+    "kto_rejected_weight": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+      "line": 149,
+      "type": "float",
+      "class": "RLHFArguments"
+    },
+    "simpo_gamma": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+      "line": 153,
+      "type": "float",
+      "class": "RLHFArguments"
+    },
+    "ppo_buffer_size": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+      "line": 157,
+      "type": "int",
+      "class": "RLHFArguments"
+    },
+    "ppo_epochs": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+      "line": 161,
+      "type": "int",
+      "class": "RLHFArguments"
+    },
+    "ppo_score_norm": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+      "line": 165,
+      "type": "bool",
+      "class": "RLHFArguments"
+    },
+    "ppo_target": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+      "line": 169,
+      "type": "float",
+      "class": "RLHFArguments"
+    },
+    "ppo_whiten_rewards": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+      "line": 173,
+      "type": "bool",
+      "class": "RLHFArguments"
+    },
+    "ref_model": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+      "line": 177,
+      "type": "Optional[str]",
+      "class": "RLHFArguments"
+    },
+    "ref_model_adapters": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+      "line": 181,
+      "type": "Optional[str]",
+      "class": "RLHFArguments"
+    },
+    "ref_model_quantization_bit": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+      "line": 185,
+      "type": "Optional[int]",
+      "class": "RLHFArguments"
+    },
+    "reward_model": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+      "line": 189,
+      "type": "Optional[str]",
+      "class": "RLHFArguments"
+    },
+    "reward_model_adapters": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+      "line": 193,
+      "type": "Optional[str]",
+      "class": "RLHFArguments"
+    },
+    "reward_model_quantization_bit": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+      "line": 197,
+      "type": "Optional[int]",
+      "class": "RLHFArguments"
+    },
+    "reward_model_type": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+      "line": 201,
+      "type": "Literal['lora', 'full', 'api']",
+      "class": "RLHFArguments"
+    },
+    "ld_alpha": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+      "line": 205,
+      "type": "Optional[float]",
+      "class": "RLHFArguments"
+    },
+    "use_galore": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+      "line": 220,
+      "type": "bool",
+      "class": "GaloreArguments"
+    },
+    "galore_target": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+      "line": 224,
+      "type": "str",
+      "class": "GaloreArguments"
+    },
+    "galore_rank": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+      "line": 233,
+      "type": "int",
+      "class": "GaloreArguments"
+    },
+    "galore_update_interval": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+      "line": 237,
+      "type": "int",
+      "class": "GaloreArguments"
+    },
+    "galore_scale": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+      "line": 241,
+      "type": "float",
+      "class": "GaloreArguments"
+    },
+    "galore_proj_type": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+      "line": 245,
+      "type": "Literal['std', 'reverse_std', 'right', 'left', 'full']",
+      "class": "GaloreArguments"
+    },
+    "galore_layerwise": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+      "line": 249,
+      "type": "bool",
+      "class": "GaloreArguments"
+    },
+    "use_apollo": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+      "line": 259,
+      "type": "bool",
+      "class": "ApolloArguments"
+    },
+    "apollo_target": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+      "line": 263,
+      "type": "str",
+      "class": "ApolloArguments"
+    },
+    "apollo_rank": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+      "line": 272,
+      "type": "int",
+      "class": "ApolloArguments"
+    },
+    "apollo_update_interval": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+      "line": 276,
+      "type": "int",
+      "class": "ApolloArguments"
+    },
+    "apollo_scale": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+      "line": 280,
+      "type": "float",
+      "class": "ApolloArguments"
+    },
+    "apollo_proj": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+      "line": 284,
+      "type": "Literal['svd', 'random']",
+      "class": "ApolloArguments"
+    },
+    "apollo_proj_type": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+      "line": 288,
+      "type": "Literal['std', 'right', 'left']",
+      "class": "ApolloArguments"
+    },
+    "apollo_scale_type": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+      "line": 292,
+      "type": "Literal['channel', 'tensor']",
+      "class": "ApolloArguments"
+    },
+    "apollo_layerwise": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+      "line": 296,
+      "type": "bool",
+      "class": "ApolloArguments"
+    },
+    "apollo_scale_front": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+      "line": 300,
+      "type": "bool",
+      "class": "ApolloArguments"
+    },
+    "use_badam": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+      "line": 310,
+      "type": "bool",
+      "class": "BAdamArgument"
+    },
+    "badam_mode": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+      "line": 314,
+      "type": "Literal['layer', 'ratio']",
+      "class": "BAdamArgument"
+    },
+    "badam_start_block": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+      "line": 318,
+      "type": "Optional[int]",
+      "class": "BAdamArgument"
+    },
+    "badam_switch_mode": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+      "line": 322,
+      "type": "Optional[Literal['ascending', 'descending', 'random', 'fixed']]",
+      "class": "BAdamArgument"
+    },
+    "badam_switch_interval": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+      "line": 326,
+      "type": "Optional[int]",
+      "class": "BAdamArgument"
+    },
+    "badam_update_ratio": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+      "line": 332,
+      "type": "float",
+      "class": "BAdamArgument"
+    },
+    "badam_mask_mode": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+      "line": 336,
+      "type": "Literal['adjacent', 'scatter']",
+      "class": "BAdamArgument"
+    },
+    "badam_verbose": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+      "line": 346,
+      "type": "int",
+      "class": "BAdamArgument"
+    },
+    "use_swanlab": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+      "line": 359,
+      "type": "bool",
+      "class": "SwanLabArguments"
+    },
+    "swanlab_project": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+      "line": 363,
+      "type": "Optional[str]",
+      "class": "SwanLabArguments"
+    },
+    "swanlab_workspace": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+      "line": 367,
+      "type": "Optional[str]",
+      "class": "SwanLabArguments"
+    },
+    "swanlab_run_name": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+      "line": 371,
+      "type": "Optional[str]",
+      "class": "SwanLabArguments"
+    },
+    "swanlab_mode": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+      "line": 375,
+      "type": "Literal['cloud', 'local']",
+      "class": "SwanLabArguments"
+    },
+    "swanlab_api_key": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+      "line": 379,
+      "type": "Optional[str]",
+      "class": "SwanLabArguments"
+    },
+    "swanlab_logdir": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+      "line": 383,
+      "type": "Optional[str]",
+      "class": "SwanLabArguments"
+    },
+    "swanlab_lark_webhook_url": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+      "line": 387,
+      "type": "Optional[str]",
+      "class": "SwanLabArguments"
+    },
+    "swanlab_lark_secret": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+      "line": 391,
+      "type": "Optional[str]",
+      "class": "SwanLabArguments"
+    },
+    "pure_bf16": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+      "line": 403,
+      "type": "bool",
+      "class": "FinetuningArguments"
+    },
+    "stage": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+      "line": 407,
+      "type": "Literal['pt', 'sft', 'rm', 'ppo', 'dpo', 'kto']",
+      "class": "FinetuningArguments"
+    },
+    "finetuning_type": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+      "line": 411,
+      "type": "Literal['lora', 'freeze', 'full']",
+      "class": "FinetuningArguments"
+    },
+    "use_llama_pro": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+      "line": 415,
+      "type": "bool",
+      "class": "FinetuningArguments"
+    },
+    "use_adam_mini": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+      "line": 419,
+      "type": "bool",
+      "class": "FinetuningArguments"
+    },
+    "use_muon": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+      "line": 423,
+      "type": "bool",
+      "class": "FinetuningArguments"
+    },
+    "freeze_vision_tower": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+      "line": 427,
+      "type": "bool",
+      "class": "FinetuningArguments"
+    },
+    "freeze_multi_modal_projector": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+      "line": 431,
+      "type": "bool",
+      "class": "FinetuningArguments"
+    },
+    "freeze_language_model": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+      "line": 435,
+      "type": "bool",
+      "class": "FinetuningArguments"
+    },
+    "compute_accuracy": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+      "line": 439,
+      "type": "bool",
+      "class": "FinetuningArguments"
+    },
+    "disable_shuffling": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+      "line": 443,
+      "type": "bool",
+      "class": "FinetuningArguments"
+    },
+    "early_stopping_steps": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+      "line": 447,
+      "type": "Optional[int]",
+      "class": "FinetuningArguments"
+    },
+    "plot_loss": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+      "line": 451,
+      "type": "bool",
+      "class": "FinetuningArguments"
+    },
+    "include_effective_tokens_per_second": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+      "line": 455,
+      "type": "bool",
+      "class": "FinetuningArguments"
+    },
+    "do_sample": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/generating_args.py",
+      "line": 25,
+      "type": "bool",
+      "class": "GeneratingArguments"
+    },
+    "temperature": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/generating_args.py",
+      "line": 29,
+      "type": "float",
+      "class": "GeneratingArguments"
+    },
+    "top_p": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/generating_args.py",
+      "line": 33,
+      "type": "float",
+      "class": "GeneratingArguments"
+    },
+    "top_k": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/generating_args.py",
+      "line": 41,
+      "type": "int",
+      "class": "GeneratingArguments"
+    },
+    "num_beams": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/generating_args.py",
+      "line": 45,
+      "type": "int",
+      "class": "GeneratingArguments"
+    },
+    "max_length": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/generating_args.py",
+      "line": 49,
+      "type": "int",
+      "class": "GeneratingArguments"
+    },
+    "max_new_tokens": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/generating_args.py",
+      "line": 53,
+      "type": "int",
+      "class": "GeneratingArguments"
+    },
+    "repetition_penalty": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/generating_args.py",
+      "line": 57,
+      "type": "float",
+      "class": "GeneratingArguments"
+    },
+    "length_penalty": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/generating_args.py",
+      "line": 61,
+      "type": "float",
+      "class": "GeneratingArguments"
+    },
+    "skip_special_tokens": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/generating_args.py",
+      "line": 65,
+      "type": "bool",
+      "class": "GeneratingArguments"
+    },
+    "model_name_or_path": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+      "line": 33,
+      "type": "Optional[str]",
+      "class": "BaseModelArguments"
+    },
+    "adapter_name_or_path": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+      "line": 39,
+      "type": "Optional[str]",
+      "class": "BaseModelArguments"
+    },
+    "adapter_folder": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+      "line": 48,
+      "type": "Optional[str]",
+      "class": "BaseModelArguments"
+    },
+    "cache_dir": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+      "line": 52,
+      "type": "Optional[str]",
+      "class": "BaseModelArguments"
+    },
+    "use_fast_tokenizer": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+      "line": 56,
+      "type": "bool",
+      "class": "BaseModelArguments"
+    },
+    "resize_vocab": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+      "line": 60,
+      "type": "bool",
+      "class": "BaseModelArguments"
+    },
+    "split_special_tokens": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+      "line": 64,
+      "type": "bool",
+      "class": "BaseModelArguments"
+    },
+    "add_tokens": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+      "line": 68,
+      "type": "Optional[str]",
+      "class": "BaseModelArguments"
+    },
+    "add_special_tokens": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+      "line": 74,
+      "type": "Optional[str]",
+      "class": "BaseModelArguments"
+    },
+    "model_revision": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+      "line": 78,
+      "type": "str",
+      "class": "BaseModelArguments"
+    },
+    "low_cpu_mem_usage": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+      "line": 82,
+      "type": "bool",
+      "class": "BaseModelArguments"
+    },
+    "rope_scaling": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+      "line": 86,
+      "type": "Optional[RopeScaling]",
+      "class": "BaseModelArguments"
+    },
+    "flash_attn": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+      "line": 90,
+      "type": "AttentionFunction",
+      "class": "BaseModelArguments"
+    },
+    "shift_attn": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+      "line": 94,
+      "type": "bool",
+      "class": "BaseModelArguments"
+    },
+    "mixture_of_depths": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+      "line": 98,
+      "type": "Optional[Literal['convert', 'load']]",
+      "class": "BaseModelArguments"
+    },
+    "use_unsloth": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+      "line": 102,
+      "type": "bool",
+      "class": "BaseModelArguments"
+    },
+    "use_unsloth_gc": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+      "line": 106,
+      "type": "bool",
+      "class": "BaseModelArguments"
+    },
+    "enable_liger_kernel": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+      "line": 110,
+      "type": "bool",
+      "class": "BaseModelArguments"
+    },
+    "moe_aux_loss_coef": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+      "line": 114,
+      "type": "Optional[float]",
+      "class": "BaseModelArguments"
+    },
+    "disable_gradient_checkpointing": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+      "line": 118,
+      "type": "bool",
+      "class": "BaseModelArguments"
+    },
+    "use_reentrant_gc": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+      "line": 122,
+      "type": "bool",
+      "class": "BaseModelArguments"
+    },
+    "upcast_layernorm": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+      "line": 126,
+      "type": "bool",
+      "class": "BaseModelArguments"
+    },
+    "upcast_lmhead_output": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+      "line": 130,
+      "type": "bool",
+      "class": "BaseModelArguments"
+    },
+    "train_from_scratch": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+      "line": 134,
+      "type": "bool",
+      "class": "BaseModelArguments"
+    },
+    "infer_backend": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+      "line": 138,
+      "type": "EngineName",
+      "class": "BaseModelArguments"
+    },
+    "offload_folder": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+      "line": 142,
+      "type": "str",
+      "class": "BaseModelArguments"
+    },
+    "use_cache": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+      "line": 146,
+      "type": "bool",
+      "class": "BaseModelArguments"
+    },
+    "infer_dtype": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+      "line": 150,
+      "type": "Literal['auto', 'float16', 'bfloat16', 'float32']",
+      "class": "BaseModelArguments"
+    },
+    "hf_hub_token": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+      "line": 154,
+      "type": "Optional[str]",
+      "class": "BaseModelArguments"
+    },
+    "ms_hub_token": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+      "line": 158,
+      "type": "Optional[str]",
+      "class": "BaseModelArguments"
+    },
+    "om_hub_token": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+      "line": 162,
+      "type": "Optional[str]",
+      "class": "BaseModelArguments"
+    },
+    "print_param_status": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+      "line": 166,
+      "type": "bool",
+      "class": "BaseModelArguments"
+    },
+    "trust_remote_code": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+      "line": 170,
+      "type": "bool",
+      "class": "BaseModelArguments"
+    },
+    "quantization_method": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+      "line": 196,
+      "type": "QuantizationMethod",
+      "class": "QuantizationArguments"
+    },
+    "quantization_bit": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+      "line": 200,
+      "type": "Optional[int]",
+      "class": "QuantizationArguments"
+    },
+    "quantization_type": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+      "line": 204,
+      "type": "Literal['fp4', 'nf4']",
+      "class": "QuantizationArguments"
+    },
+    "double_quantization": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+      "line": 208,
+      "type": "bool",
+      "class": "QuantizationArguments"
+    },
+    "quantization_device_map": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+      "line": 212,
+      "type": "Optional[Literal['auto']]",
+      "class": "QuantizationArguments"
+    },
+    "image_max_pixels": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+      "line": 222,
+      "type": "int",
+      "class": "ProcessorArguments"
+    },
+    "image_min_pixels": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+      "line": 226,
+      "type": "int",
+      "class": "ProcessorArguments"
+    },
+    "image_do_pan_and_scan": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+      "line": 230,
+      "type": "bool",
+      "class": "ProcessorArguments"
+    },
+    "crop_to_patches": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+      "line": 234,
+      "type": "bool",
+      "class": "ProcessorArguments"
+    },
+    "video_max_pixels": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+      "line": 238,
+      "type": "int",
+      "class": "ProcessorArguments"
+    },
+    "video_min_pixels": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+      "line": 242,
+      "type": "int",
+      "class": "ProcessorArguments"
+    },
+    "video_fps": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+      "line": 246,
+      "type": "float",
+      "class": "ProcessorArguments"
+    },
+    "video_maxlen": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+      "line": 250,
+      "type": "int",
+      "class": "ProcessorArguments"
+    },
+    "use_audio_in_video": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+      "line": 254,
+      "type": "bool",
+      "class": "ProcessorArguments"
+    },
+    "audio_sampling_rate": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+      "line": 258,
+      "type": "int",
+      "class": "ProcessorArguments"
+    },
+    "export_dir": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+      "line": 275,
+      "type": "Optional[str]",
+      "class": "ExportArguments"
+    },
+    "export_size": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+      "line": 279,
+      "type": "int",
+      "class": "ExportArguments"
+    },
+    "export_device": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+      "line": 283,
+      "type": "Literal['cpu', 'auto']",
+      "class": "ExportArguments"
+    },
+    "export_quantization_bit": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+      "line": 287,
+      "type": "Optional[int]",
+      "class": "ExportArguments"
+    },
+    "export_quantization_dataset": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+      "line": 291,
+      "type": "Optional[str]",
+      "class": "ExportArguments"
+    },
+    "export_quantization_nsamples": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+      "line": 295,
+      "type": "int",
+      "class": "ExportArguments"
+    },
+    "export_quantization_maxlen": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+      "line": 299,
+      "type": "int",
+      "class": "ExportArguments"
+    },
+    "export_legacy_format": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+      "line": 303,
+      "type": "bool",
+      "class": "ExportArguments"
+    },
+    "export_hub_model_id": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+      "line": 307,
+      "type": "Optional[str]",
+      "class": "ExportArguments"
+    },
+    "vllm_maxlen": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+      "line": 321,
+      "type": "int",
+      "class": "VllmArguments"
+    },
+    "vllm_gpu_util": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+      "line": 325,
+      "type": "float",
+      "class": "VllmArguments"
+    },
+    "vllm_enforce_eager": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+      "line": 329,
+      "type": "bool",
+      "class": "VllmArguments"
+    },
+    "vllm_max_lora_rank": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+      "line": 333,
+      "type": "int",
+      "class": "VllmArguments"
+    },
+    "vllm_config": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+      "line": 337,
+      "type": "Optional[Union[dict, str]]",
+      "class": "VllmArguments"
+    },
+    "sglang_maxlen": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+      "line": 351,
+      "type": "int",
+      "class": "SGLangArguments"
+    },
+    "sglang_mem_fraction": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+      "line": 355,
+      "type": "float",
+      "class": "SGLangArguments"
+    },
+    "sglang_tp_size": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+      "line": 359,
+      "type": "int",
+      "class": "SGLangArguments"
+    },
+    "sglang_config": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+      "line": 363,
+      "type": "Optional[Union[dict, str]]",
+      "class": "SGLangArguments"
+    },
+    "sglang_lora_backend": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+      "line": 367,
+      "type": "Literal['triton', 'flashinfer']",
+      "class": "SGLangArguments"
+    },
+    "ray_run_name": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/training_args.py",
+      "line": 29,
+      "type": "Optional[str]",
+      "class": "RayArguments"
+    },
+    "ray_storage_path": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/training_args.py",
+      "line": 33,
+      "type": "str",
+      "class": "RayArguments"
+    },
+    "ray_storage_filesystem": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/training_args.py",
+      "line": 37,
+      "type": "Optional[Literal['s3', 'gs', 'gcs']]",
+      "class": "RayArguments"
+    },
+    "ray_num_workers": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/training_args.py",
+      "line": 41,
+      "type": "int",
+      "class": "RayArguments"
+    },
+    "resources_per_worker": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/training_args.py",
+      "line": 45,
+      "type": "Union[dict, str]",
+      "class": "RayArguments"
+    },
+    "placement_strategy": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/training_args.py",
+      "line": 49,
+      "type": "Literal['SPREAD', 'PACK', 'STRICT_SPREAD', 'STRICT_PACK']",
+      "class": "RayArguments"
+    },
+    "ray_init_kwargs": {
+      "file": "vendor/LlamaFactory/src/llamafactory/hparams/training_args.py",
+      "line": 53,
+      "type": "Optional[dict]",
+      "class": "RayArguments"
+    },
+    "output_dir": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 817,
+      "type": "Optional[str]",
+      "class": "TrainingArguments"
+    },
+    "overwrite_output_dir": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 823,
+      "type": "bool",
+      "class": "TrainingArguments"
+    },
+    "do_train": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 833,
+      "type": "bool",
+      "class": "TrainingArguments"
+    },
+    "do_eval": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 834,
+      "type": "bool",
+      "class": "TrainingArguments"
+    },
+    "do_predict": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 835,
+      "type": "bool",
+      "class": "TrainingArguments"
+    },
+    "eval_strategy": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 836,
+      "type": "Union[IntervalStrategy, str]",
+      "class": "TrainingArguments"
+    },
+    "prediction_loss_only": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 840,
+      "type": "bool",
+      "class": "TrainingArguments"
+    },
+    "per_device_train_batch_size": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 845,
+      "type": "int",
+      "class": "TrainingArguments"
+    },
+    "per_device_eval_batch_size": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 848,
+      "type": "int",
+      "class": "TrainingArguments"
+    },
+    "per_gpu_train_batch_size": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 852,
+      "type": "Optional[int]",
+      "class": "TrainingArguments"
+    },
+    "per_gpu_eval_batch_size": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 861,
+      "type": "Optional[int]",
+      "class": "TrainingArguments"
+    },
+    "gradient_accumulation_steps": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 871,
+      "type": "int",
+      "class": "TrainingArguments"
+    },
+    "eval_accumulation_steps": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 875,
+      "type": "Optional[int]",
+      "class": "TrainingArguments"
+    },
+    "eval_delay": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 880,
+      "type": "Optional[float]",
+      "class": "TrainingArguments"
+    },
+    "torch_empty_cache_steps": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 890,
+      "type": "Optional[int]",
+      "class": "TrainingArguments"
+    },
+    "learning_rate": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 899,
+      "type": "float",
+      "class": "TrainingArguments"
+    },
+    "weight_decay": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 900,
+      "type": "float",
+      "class": "TrainingArguments"
+    },
+    "adam_beta1": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 901,
+      "type": "float",
+      "class": "TrainingArguments"
+    },
+    "adam_beta2": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 902,
+      "type": "float",
+      "class": "TrainingArguments"
+    },
+    "adam_epsilon": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 903,
+      "type": "float",
+      "class": "TrainingArguments"
+    },
+    "max_grad_norm": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 904,
+      "type": "float",
+      "class": "TrainingArguments"
+    },
+    "num_train_epochs": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 906,
+      "type": "float",
+      "class": "TrainingArguments"
+    },
+    "max_steps": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 907,
+      "type": "int",
+      "class": "TrainingArguments"
+    },
+    "lr_scheduler_type": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 911,
+      "type": "Union[SchedulerType, str]",
+      "class": "TrainingArguments"
+    },
+    "lr_scheduler_kwargs": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 915,
+      "type": "Optional[Union[dict, str]]",
+      "class": "TrainingArguments"
+    },
+    "warmup_ratio": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 923,
+      "type": "float",
+      "class": "TrainingArguments"
+    },
+    "warmup_steps": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 926,
+      "type": "int",
+      "class": "TrainingArguments"
+    },
+    "log_level": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 928,
+      "type": "Optional[str]",
+      "class": "TrainingArguments"
+    },
+    "log_level_replica": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 939,
+      "type": "Optional[str]",
+      "class": "TrainingArguments"
+    },
+    "log_on_each_node": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 946,
+      "type": "bool",
+      "class": "TrainingArguments"
+    },
+    "logging_dir": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 955,
+      "type": "Optional[str]",
+      "class": "TrainingArguments"
+    },
+    "logging_strategy": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 956,
+      "type": "Union[IntervalStrategy, str]",
+      "class": "TrainingArguments"
+    },
+    "logging_first_step": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 960,
+      "type": "bool",
+      "class": "TrainingArguments"
+    },
+    "logging_steps": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 961,
+      "type": "float",
+      "class": "TrainingArguments"
+    },
+    "logging_nan_inf_filter": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 970,
+      "type": "bool",
+      "class": "TrainingArguments"
+    },
+    "save_strategy": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 971,
+      "type": "Union[SaveStrategy, str]",
+      "class": "TrainingArguments"
+    },
+    "save_steps": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 975,
+      "type": "float",
+      "class": "TrainingArguments"
+    },
+    "save_total_limit": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 984,
+      "type": "Optional[int]",
+      "class": "TrainingArguments"
+    },
+    "save_safetensors": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 998,
+      "type": "Optional[bool]",
+      "class": "TrainingArguments"
+    },
+    "save_on_each_node": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 1004,
+      "type": "bool",
+      "class": "TrainingArguments"
+    },
+    "save_only_model": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 1013,
+      "type": "bool",
+      "class": "TrainingArguments"
+    },
+    "restore_callback_states_from_checkpoint": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 1024,
+      "type": "bool",
+      "class": "TrainingArguments"
+    },
+    "no_cuda": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 1030,
+      "type": "bool",
+      "class": "TrainingArguments"
+    },
+    "use_cpu": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 1034,
+      "type": "bool",
+      "class": "TrainingArguments"
+    },
+    "use_mps_device": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 1040,
+      "type": "bool",
+      "class": "TrainingArguments"
+    },
+    "data_seed": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 1048,
+      "type": "Optional[int]",
+      "class": "TrainingArguments"
+    },
+    "jit_mode_eval": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 1049,
+      "type": "bool",
+      "class": "TrainingArguments"
+    },
+    "use_ipex": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 1052,
+      "type": "bool",
+      "class": "TrainingArguments"
+    },
+    "bf16": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 1061,
+      "type": "bool",
+      "class": "TrainingArguments"
+    },
+    "fp16": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 1070,
+      "type": "bool",
+      "class": "TrainingArguments"
+    },
+    "fp16_opt_level": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 1074,
+      "type": "str",
+      "class": "TrainingArguments"
+    },
+    "half_precision_backend": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 1083,
+      "type": "str",
+      "class": "TrainingArguments"
+    },
+    "bf16_full_eval": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 1090,
+      "type": "bool",
+      "class": "TrainingArguments"
+    },
+    "fp16_full_eval": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 1099,
+      "type": "bool",
+      "class": "TrainingArguments"
+    },
+    "tf32": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 1103,
+      "type": "Optional[bool]",
+      "class": "TrainingArguments"
+    },
+    "local_rank": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 1112,
+      "type": "int",
+      "class": "TrainingArguments"
+    },
+    "ddp_backend": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 1113,
+      "type": "Optional[str]",
+      "class": "TrainingArguments"
+    },
+    "tpu_num_cores": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 1120,
+      "type": "Optional[int]",
+      "class": "TrainingArguments"
+    },
+    "tpu_metrics_debug": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 1123,
+      "type": "bool",
+      "class": "TrainingArguments"
+    },
+    "debug": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 1131,
+      "type": "Union[str, list[DebugOption]]",
+      "class": "TrainingArguments"
+    },
+    "dataloader_drop_last": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 1142,
+      "type": "bool",
+      "class": "TrainingArguments"
+    },
+    "eval_steps": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 1145,
+      "type": "Optional[float]",
+      "class": "TrainingArguments"
+    },
+    "dataloader_num_workers": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 1154,
+      "type": "int",
+      "class": "TrainingArguments"
+    },
+    "dataloader_prefetch_factor": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 1163,
+      "type": "Optional[int]",
+      "class": "TrainingArguments"
+    },
+    "past_index": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 1173,
+      "type": "int",
+      "class": "TrainingArguments"
+    },
+    "run_name": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 1178,
+      "type": "Optional[str]",
+      "class": "TrainingArguments"
+    },
+    "disable_tqdm": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 1184,
+      "type": "Optional[bool]",
+      "class": "TrainingArguments"
+    },
+    "remove_unused_columns": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 1188,
+      "type": "Optional[bool]",
+      "class": "TrainingArguments"
+    },
+    "label_names": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 1191,
+      "type": "Optional[list[str]]",
+      "class": "TrainingArguments"
+    },
+    "load_best_model_at_end": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 1194,
+      "type": "Optional[bool]",
+      "class": "TrainingArguments"
+    },
+    "metric_for_best_model": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 1203,
+      "type": "Optional[str]",
+      "class": "TrainingArguments"
+    },
+    "greater_is_better": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 1206,
+      "type": "Optional[bool]",
+      "class": "TrainingArguments"
+    },
+    "ignore_data_skip": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 1209,
+      "type": "bool",
+      "class": "TrainingArguments"
+    },
+    "fsdp": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 1218,
+      "type": "Optional[Union[list[FSDPOption], str]]",
+      "class": "TrainingArguments"
+    },
+    "fsdp_min_num_params": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 1230,
+      "type": "int",
+      "class": "TrainingArguments"
+    },
+    "fsdp_config": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 1239,
+      "type": "Optional[Union[dict, str]]",
+      "class": "TrainingArguments"
+    },
+    "tp_size": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 1248,
+      "type": "Optional[int]",
+      "class": "TrainingArguments"
+    },
+    "fsdp_transformer_layer_cls_to_wrap": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 1260,
+      "type": "Optional[str]",
+      "class": "TrainingArguments"
+    },
+    "accelerator_config": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 1269,
+      "type": "Optional[Union[dict, str]]",
+      "class": "TrainingArguments"
+    },
+    "deepspeed": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 1278,
+      "type": "Optional[Union[dict, str]]",
+      "class": "TrainingArguments"
+    },
+    "label_smoothing_factor": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 1287,
+      "type": "float",
+      "class": "TrainingArguments"
+    },
+    "optim": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 1297,
+      "type": "Union[OptimizerNames, str]",
+      "class": "TrainingArguments"
+    },
+    "optim_args": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 1301,
+      "type": "Optional[str]",
+      "class": "TrainingArguments"
+    },
+    "adafactor": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 1302,
+      "type": "bool",
+      "class": "TrainingArguments"
+    },
+    "group_by_length": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 1303,
+      "type": "bool",
+      "class": "TrainingArguments"
+    },
+    "length_column_name": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 1307,
+      "type": "Optional[str]",
+      "class": "TrainingArguments"
+    },
+    "report_to": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 1311,
+      "type": "Union[None, str, list[str]]",
+      "class": "TrainingArguments"
+    },
+    "ddp_find_unused_parameters": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 1314,
+      "type": "Optional[bool]",
+      "class": "TrainingArguments"
+    },
+    "ddp_bucket_cap_mb": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 1323,
+      "type": "Optional[int]",
+      "class": "TrainingArguments"
+    },
+    "ddp_broadcast_buffers": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 1332,
+      "type": "Optional[bool]",
+      "class": "TrainingArguments"
+    },
+    "dataloader_pin_memory": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 1341,
+      "type": "bool",
+      "class": "TrainingArguments"
+    },
+    "dataloader_persistent_workers": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 1344,
+      "type": "bool",
+      "class": "TrainingArguments"
+    },
+    "skip_memory_metrics": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 1350,
+      "type": "bool",
+      "class": "TrainingArguments"
+    },
+    "use_legacy_prediction_loop": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 1353,
+      "type": "bool",
+      "class": "TrainingArguments"
+    },
+    "push_to_hub": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 1356,
+      "type": "bool",
+      "class": "TrainingArguments"
+    },
+    "resume_from_checkpoint": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 1359,
+      "type": "Optional[str]",
+      "class": "TrainingArguments"
+    },
+    "hub_model_id": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 1363,
+      "type": "Optional[str]",
+      "class": "TrainingArguments"
+    },
+    "hub_strategy": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 1366,
+      "type": "Union[HubStrategy, str]",
+      "class": "TrainingArguments"
+    },
+    "hub_token": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 1370,
+      "type": "Optional[str]",
+      "class": "TrainingArguments"
+    },
+    "hub_private_repo": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 1371,
+      "type": "Optional[bool]",
+      "class": "TrainingArguments"
+    },
+    "hub_always_push": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 1377,
+      "type": "bool",
+      "class": "TrainingArguments"
+    },
+    "gradient_checkpointing": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 1381,
+      "type": "bool",
+      "class": "TrainingArguments"
+    },
+    "gradient_checkpointing_kwargs": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 1387,
+      "type": "Optional[Union[dict, str]]",
+      "class": "TrainingArguments"
+    },
+    "include_inputs_for_metrics": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 1393,
+      "type": "bool",
+      "class": "TrainingArguments"
+    },
+    "include_for_metrics": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 1399,
+      "type": "list[str]",
+      "class": "TrainingArguments"
+    },
+    "eval_do_concat_batches": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 1406,
+      "type": "bool",
+      "class": "TrainingArguments"
+    },
+    "fp16_backend": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 1413,
+      "type": "str",
+      "class": "TrainingArguments"
+    },
+    "push_to_hub_model_id": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 1420,
+      "type": "Optional[str]",
+      "class": "TrainingArguments"
+    },
+    "push_to_hub_organization": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 1423,
+      "type": "Optional[str]",
+      "class": "TrainingArguments"
+    },
+    "push_to_hub_token": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 1426,
+      "type": "Optional[str]",
+      "class": "TrainingArguments"
+    },
+    "mp_parameters": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 1430,
+      "type": "str",
+      "class": "TrainingArguments"
+    },
+    "auto_find_batch_size": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 1435,
+      "type": "bool",
+      "class": "TrainingArguments"
+    },
+    "full_determinism": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 1444,
+      "type": "bool",
+      "class": "TrainingArguments"
+    },
+    "torchdynamo": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 1453,
+      "type": "Optional[str]",
+      "class": "TrainingArguments"
+    },
+    "ray_scope": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 1459,
+      "type": "Optional[str]",
+      "class": "TrainingArguments"
+    },
+    "ddp_timeout": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 1472,
+      "type": "Optional[int]",
+      "class": "TrainingArguments"
+    },
+    "torch_compile": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 1478,
+      "type": "bool",
+      "class": "TrainingArguments"
+    },
+    "torch_compile_backend": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 1481,
+      "type": "Optional[str]",
+      "class": "TrainingArguments"
+    },
+    "torch_compile_mode": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 1487,
+      "type": "Optional[str]",
+      "class": "TrainingArguments"
+    },
+    "include_tokens_per_second": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 1494,
+      "type": "Optional[bool]",
+      "class": "TrainingArguments"
+    },
+    "include_num_input_tokens_seen": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 1499,
+      "type": "Optional[bool]",
+      "class": "TrainingArguments"
+    },
+    "neftune_noise_alpha": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 1506,
+      "type": "Optional[float]",
+      "class": "TrainingArguments"
+    },
+    "optim_target_modules": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 1513,
+      "type": "Union[None, str, list[str]]",
+      "class": "TrainingArguments"
+    },
+    "batch_eval_metrics": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 1520,
+      "type": "bool",
+      "class": "TrainingArguments"
+    },
+    "eval_on_start": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 1525,
+      "type": "bool",
+      "class": "TrainingArguments"
+    },
+    "use_liger_kernel": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 1532,
+      "type": "Optional[bool]",
+      "class": "TrainingArguments"
+    },
+    "eval_use_gather_object": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 1537,
+      "type": "Optional[bool]",
+      "class": "TrainingArguments"
+    },
+    "average_tokens_across_devices": {
+      "file": "vendor/transformers-4.51.3/training_args.py",
+      "line": 1544,
+      "type": "Optional[bool]",
+      "class": "TrainingArguments"
+    },
+    "sortish_sampler": {
+      "file": "vendor/transformers-4.51.3/training_args_seq2seq.py",
+      "line": 51,
+      "type": "bool",
+      "class": "Seq2SeqTrainingArguments"
+    },
+    "predict_with_generate": {
+      "file": "vendor/transformers-4.51.3/training_args_seq2seq.py",
+      "line": 52,
+      "type": "bool",
+      "class": "Seq2SeqTrainingArguments"
+    },
+    "generation_max_length": {
+      "file": "vendor/transformers-4.51.3/training_args_seq2seq.py",
+      "line": 55,
+      "type": "Optional[int]",
+      "class": "Seq2SeqTrainingArguments"
+    },
+    "generation_num_beams": {
+      "file": "vendor/transformers-4.51.3/training_args_seq2seq.py",
+      "line": 64,
+      "type": "Optional[int]",
+      "class": "Seq2SeqTrainingArguments"
+    },
+    "generation_config": {
+      "file": "vendor/transformers-4.51.3/training_args_seq2seq.py",
+      "line": 73,
+      "type": "Optional[Union[str, Path, GenerationConfig]]",
+      "class": "Seq2SeqTrainingArguments"
+    }
+  },
+  "source_hash_normalization": "CRLF_to_LF_only"
+}

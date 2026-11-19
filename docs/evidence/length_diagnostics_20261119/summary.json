@@ -1,0 +1,181 @@
+{
+  "input_sha256": {
+    "sft_train.internal.jsonl": "8ac5e619f5be6718b0113cc10aa64206d907e761e8aae5c6d258843eda958376",
+    "dpo_train.internal.jsonl": "a049144ac74ca15867c2b6d9ab54bdc47b7ba72765bc14e171dab0a0e7d4494a",
+    "base_strict_cases.jsonl": "d364aac699f304b876421b8897b7d60a54e662f4deff0a8589cae97a5d9c6e26",
+    "sft_strict_cases.jsonl": "281223b0f20a65e96f5343e988437da6cd16ccfe48aa46ca379afea0910dc194",
+    "dpo_strict_cases.jsonl": "acde0f4d706a4310eee089f411eece0a16b503863ce2e73df4d09786d9233100",
+    "dpo_beta005_strict_cases.jsonl": "edc07c96926f24d339a0ba8928ed18a423227ad2d98d1c2e3be17e93f6b069fc"
+  },
+  "training_data": {
+    "sft": {
+      "sequence_tokens": {
+        "count": 14289,
+        "mean": 719.4078661907761,
+        "median": 751,
+        "p90_nearest_rank": 967,
+        "max": 1024
+      },
+      "assistant_content_tokens": {
+        "count": 14289,
+        "mean": 562.5323675554622,
+        "median": 601,
+        "p90_nearest_rank": 815,
+        "max": 961
+      },
+      "assistant_turns": {
+        "count": 14289,
+        "mean": 2.322345860452096,
+        "median": 2,
+        "p90_nearest_rank": 3,
+        "max": 7
+      },
+      "length_definition": "assistant_content_tokens sums assistant content across turns; not a single generated response length"
+    },
+    "dpo": {
+      "chosen_sequence_tokens": {
+        "count": 7400,
+        "mean": 413.1731081081081,
+        "median": 380.0,
+        "p90_nearest_rank": 754,
+        "max": 1024
+      },
+      "rejected_sequence_tokens": {
+        "count": 7400,
+        "mean": 379.1508108108108,
+        "median": 335.0,
+        "p90_nearest_rank": 714,
+        "max": 1023
+      },
+      "chosen_response_tokens": {
+        "count": 7400,
+        "mean": 262.94743243243244,
+        "median": 210.0,
+        "p90_nearest_rank": 588,
+        "max": 965
+      },
+      "rejected_response_tokens": {
+        "count": 7400,
+        "mean": 228.92513513513512,
+        "median": 172.0,
+        "p90_nearest_rank": 525,
+        "max": 959
+      },
+      "chosen_longer": 4063,
+      "chosen_shorter": 3262,
+      "equal_length": 75,
+      "interpretation": "Training preference length association; cannot establish model length bias or human generation preference"
+    }
+  },
+  "paired_evaluation": {
+    "sft_minus_base": {
+      "n_paired": 541,
+      "regressed": 91,
+      "improved": 28,
+      "regressed_with_candidate_at_cap": 5,
+      "regressed_with_candidate_below_cap": 86,
+      "regressed_with_both_below_cap": 84,
+      "candidate_longer_count": 175,
+      "candidate_shorter_count": 340,
+      "left_lengths": {
+        "count": 541,
+        "mean": 290.15896487985214,
+        "median": 197,
+        "p90_nearest_rank": 655,
+        "max": 2048
+      },
+      "right_lengths": {
+        "count": 541,
+        "mean": 270.2495378927911,
+        "median": 175,
+        "p90_nearest_rank": 474,
+        "max": 2048
+      },
+      "both_below_cap_descriptive_subset": {
+        "n": 519,
+        "left_passed": 369,
+        "right_passed": 312,
+        "difference": -0.10982658959537572
+      },
+      "limitations": [
+        "Post-hoc analysis of observed test outputs; no new model selection or full-score replacement.",
+        "Below-cap selection depends on both model outputs and is not a causal length-controlled experiment.",
+        "At-cap is an output length flag, not proof of truncation harm; below-cap does not exclude other length effects.",
+        "Observed association cannot identify learning rate, data distribution or forgetting as the cause."
+      ]
+    },
+    "dpo_minus_sft": {
+      "n_paired": 541,
+      "regressed": 20,
+      "improved": 30,
+      "regressed_with_candidate_at_cap": 3,
+      "regressed_with_candidate_below_cap": 17,
+      "regressed_with_both_below_cap": 17,
+      "candidate_longer_count": 260,
+      "candidate_shorter_count": 180,
+      "left_lengths": {
+        "count": 541,
+        "mean": 270.2495378927911,
+        "median": 175,
+        "p90_nearest_rank": 474,
+        "max": 2048
+      },
+      "right_lengths": {
+        "count": 541,
+        "mean": 293.2218114602588,
+        "median": 197,
+        "p90_nearest_rank": 498,
+        "max": 2048
+      },
+      "both_below_cap_descriptive_subset": {
+        "n": 515,
+        "left_passed": 307,
+        "right_passed": 318,
+        "difference": 0.021359223300970873
+      },
+      "limitations": [
+        "Post-hoc analysis of observed test outputs; no new model selection or full-score replacement.",
+        "Below-cap selection depends on both model outputs and is not a causal length-controlled experiment.",
+        "At-cap is an output length flag, not proof of truncation harm; below-cap does not exclude other length effects.",
+        "Observed association cannot identify learning rate, data distribution or forgetting as the cause."
+      ]
+    },
+    "dpo_beta005_minus_dpo": {
+      "n_paired": 541,
+      "regressed": 28,
+      "improved": 29,
+      "regressed_with_candidate_at_cap": 0,
+      "regressed_with_candidate_below_cap": 28,
+      "regressed_with_both_below_cap": 27,
+      "candidate_longer_count": 242,
+      "candidate_shorter_count": 175,
+      "left_lengths": {
+        "count": 541,
+        "mean": 293.2218114602588,
+        "median": 197,
+        "p90_nearest_rank": 498,
+        "max": 2048
+      },
+      "right_lengths": {
+        "count": 541,
+        "mean": 277.8299445471349,
+        "median": 199,
+        "p90_nearest_rank": 508,
+        "max": 2048
+      },
+      "both_below_cap_descriptive_subset": {
+        "n": 516,
+        "left_passed": 319,
+        "right_passed": 317,
+        "difference": -0.003875968992248062
+      },
+      "limitations": [
+        "Post-hoc analysis of observed test outputs; no new model selection or full-score replacement.",
+        "Below-cap selection depends on both model outputs and is not a causal length-controlled experiment.",
+        "At-cap is an output length flag, not proof of truncation harm; below-cap does not exclude other length effects.",
+        "Observed association cannot identify learning rate, data distribution or forgetting as the cause."
+      ]
+    }
+  },
+  "interpretation": "Exploratory diagnosis of already observed results. No new benchmark score, human label, hyperparameter choice or causal claim."
+}

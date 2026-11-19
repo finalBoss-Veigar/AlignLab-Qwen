@@ -1,0 +1,10 @@
+model_name_or_path: Qwen/Qwen2.5-7B-Instruct
+model_revision: a09a35458c702b33eeacc393d103063234e8bc28
+adapter_name_or_path: runs/artifacts/trial_checked_20261117/formal/sft
+template: qwen
+finetuning_type: lora
+trust_remote_code: false
+export_dir: runs/artifacts/trial_checked_20261117/formal/sft-merged
+export_size: 5
+export_device: cpu
+export_legacy_format: false

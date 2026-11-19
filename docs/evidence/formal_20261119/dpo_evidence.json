@@ -1,0 +1,347 @@
+{
+  "generation": {
+    "status": "completed",
+    "model_path": "/root/autodl-tmp/AlignLab/runs/artifacts/gpu_20261118/formal/dpo-merged",
+    "n_prompts": 541,
+    "model_revision": "335f8dbe67d140c8e060ccccb69403ee9aa9f796ae8b7a02cc144cc8955f7f92",
+    "tokenizer_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+    "size_class": "7B",
+    "local_model_available": true,
+    "generation_count": 541,
+    "input_sha256": "1b1e4fbe3e1b72c90b23770abf285a9f6d456d73a7da33fe3215d2327f827d0e",
+    "device_requested": "cuda:0",
+    "timeout_seconds": 31268.0,
+    "max_input_tokens": 4096,
+    "decoding": {
+      "do_sample": false,
+      "max_new_tokens": 2048,
+      "num_beams": 1,
+      "min_new_tokens": 0,
+      "repetition_penalty": 1.05,
+      "eos_token_id": [
+        151643,
+        151645
+      ]
+    },
+    "partial_output_path": null,
+    "complete_evaluation": true,
+    "started_at": "2026-11-18T21:48:51.783067+00:00",
+    "code_commit": "68480227a00174cbf904d0a16efe3194a73e9f61",
+    "code_dirty": "",
+    "generator_sha256": "63db89ae8a21c936a1dce75370492b3ac27edc850d2f236c526f981521c16871",
+    "command": [
+      "/root/autodl-tmp/AlignLab/.venv-train/bin/python",
+      "/root/autodl-tmp/AlignLab/src/alignlab/__main__.py",
+      "generate",
+      "--input",
+      "/root/autodl-tmp/AlignLab/data/evaluation/protocol_20261119_canonical/ifeval.jsonl",
+      "--output",
+      "/root/autodl-tmp/AlignLab/runs/formal_20261119/dpo_ifeval",
+      "--model",
+      "/root/autodl-tmp/AlignLab/runs/artifacts/gpu_20261118/formal/dpo-merged",
+      "--tokenizer",
+      "/root/autodl-tmp/AlignLab/models/tokenizer-qwen7b",
+      "--revision",
+      "335f8dbe67d140c8e060ccccb69403ee9aa9f796ae8b7a02cc144cc8955f7f92",
+      "--tokenizer-revision",
+      "a09a35458c702b33eeacc393d103063234e8bc28",
+      "--size-class",
+      "7B",
+      "--max-new-tokens",
+      "2048",
+      "--max-input-tokens",
+      "4096",
+      "--timeout-seconds",
+      "31268",
+      "--device",
+      "cuda:0",
+      "--execute"
+    ],
+    "working_directory": "/root/autodl-tmp/AlignLab",
+    "output_path": "/root/autodl-tmp/AlignLab/runs/formal_20261119/dpo_ifeval/generations.jsonl",
+    "device": "cuda:0",
+    "torch_version": "2.6.0+cu124",
+    "hardware": "NVIDIA A800 80GB PCIe",
+    "concurrency": 1,
+    "chat_template_sha256": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f",
+    "elapsed_seconds": 3180.053122723475,
+    "ended_at": "2026-11-18T22:41:51.801887+00:00"
+  },
+  "scoring": {
+    "status": "completed",
+    "command": [
+      "/root/autodl-tmp/AlignLab/.venv-eval/bin/python",
+      "-m",
+      "instruction_following_eval.evaluation_main",
+      "--input_data=/root/autodl-tmp/AlignLab/runs/formal_20261119/dpo_ifeval_score/official_inputs.jsonl",
+      "--input_response_data=/root/autodl-tmp/AlignLab/runs/formal_20261119/dpo_ifeval/generations.jsonl",
+      "--output_dir=/root/autodl-tmp/AlignLab/runs/formal_20261119/dpo_ifeval_score"
+    ],
+    "cwd": "/root/autodl-tmp/AlignLab/vendor/google-research",
+    "implementation_revision": "f8d6d14a1fc6eaef606d7d1e1fa4e96ee09afb81",
+    "input_sha256": "d347ec7f648fa289990b966418e099ded068d7e9feb9f262b82cc20fb191e305",
+    "response_sha256": "941ba7fdd0795abff3129315fb75c7f3dcf7d4587549c33a6bc9aa10a9fd0b92",
+    "n_prompts": 541,
+    "metrics": {
+      "implementation": "google-research/instruction_following_eval",
+      "implementation_revision": "f8d6d14a1fc6eaef606d7d1e1fa4e96ee09afb81",
+      "source_verified": true,
+      "scope": "full_official_dataset",
+      "strict": {
+        "prompt_level": 0.6155268022181146,
+        "instruction_level": 0.7038369304556354,
+        "n_prompts": 541,
+        "n_instructions": 834
+      },
+      "loose": {
+        "prompt_level": 0.6377079482439926,
+        "instruction_level": 0.7266187050359713,
+        "n_prompts": 541,
+        "n_instructions": 834
+      },
+      "official_n_prompts": 541,
+      "synthetic": false,
+      "response_provenance": "generation_records"
+    },
+    "reason": null,
+    "dataset_scope": "full_official_dataset",
+    "official_n_prompts": 541,
+    "exit_code": 0,
+    "elapsed_seconds": 1.8765741363167763
+  },
+  "recomputed": {
+    "strict": {
+      "n_prompts": 541,
+      "passed_prompts": 333,
+      "prompt_level": 0.6155268022181146,
+      "n_instructions": 834,
+      "passed_instructions": 587,
+      "instruction_level": 0.7038369304556354,
+      "output_limit_reached": 23,
+      "by_instruction": {
+        "change_case:capital_word_frequency": {
+          "passed": 17,
+          "total": 25
+        },
+        "change_case:english_capital": {
+          "passed": 18,
+          "total": 25
+        },
+        "change_case:english_lowercase": {
+          "passed": 21,
+          "total": 39
+        },
+        "combination:repeat_prompt": {
+          "passed": 20,
+          "total": 41
+        },
+        "combination:two_responses": {
+          "passed": 16,
+          "total": 24
+        },
+        "detectable_content:number_placeholders": {
+          "passed": 16,
+          "total": 27
+        },
+        "detectable_content:postscript": {
+          "passed": 24,
+          "total": 26
+        },
+        "detectable_format:constrained_response": {
+          "passed": 9,
+          "total": 10
+        },
+        "detectable_format:json_format": {
+          "passed": 16,
+          "total": 17
+        },
+        "detectable_format:multiple_sections": {
+          "passed": 11,
+          "total": 14
+        },
+        "detectable_format:number_bullet_lists": {
+          "passed": 21,
+          "total": 31
+        },
+        "detectable_format:number_highlighted_sections": {
+          "passed": 26,
+          "total": 48
+        },
+        "detectable_format:title": {
+          "passed": 37,
+          "total": 37
+        },
+        "keywords:existence": {
+          "passed": 27,
+          "total": 39
+        },
+        "keywords:forbidden_words": {
+          "passed": 38,
+          "total": 49
+        },
+        "keywords:frequency": {
+          "passed": 30,
+          "total": 42
+        },
+        "keywords:letter_frequency": {
+          "passed": 15,
+          "total": 33
+        },
+        "language:response_language": {
+          "passed": 31,
+          "total": 31
+        },
+        "length_constraints:nth_paragraph_first_word": {
+          "passed": 5,
+          "total": 12
+        },
+        "length_constraints:number_paragraphs": {
+          "passed": 13,
+          "total": 27
+        },
+        "length_constraints:number_sentences": {
+          "passed": 36,
+          "total": 52
+        },
+        "length_constraints:number_words": {
+          "passed": 24,
+          "total": 52
+        },
+        "punctuation:no_comma": {
+          "passed": 54,
+          "total": 66
+        },
+        "startend:end_checker": {
+          "passed": 24,
+          "total": 26
+        },
+        "startend:quotation": {
+          "passed": 38,
+          "total": 41
+        }
+      },
+      "cases_file": "dpo_strict_cases.jsonl",
+      "cases_sha256": "acde0f4d706a4310eee089f411eece0a16b503863ce2e73df4d09786d9233100"
+    },
+    "loose": {
+      "n_prompts": 541,
+      "passed_prompts": 345,
+      "prompt_level": 0.6377079482439926,
+      "n_instructions": 834,
+      "passed_instructions": 606,
+      "instruction_level": 0.7266187050359713,
+      "output_limit_reached": 23,
+      "by_instruction": {
+        "change_case:capital_word_frequency": {
+          "passed": 17,
+          "total": 25
+        },
+        "change_case:english_capital": {
+          "passed": 18,
+          "total": 25
+        },
+        "change_case:english_lowercase": {
+          "passed": 21,
+          "total": 39
+        },
+        "combination:repeat_prompt": {
+          "passed": 20,
+          "total": 41
+        },
+        "combination:two_responses": {
+          "passed": 18,
+          "total": 24
+        },
+        "detectable_content:number_placeholders": {
+          "passed": 16,
+          "total": 27
+        },
+        "detectable_content:postscript": {
+          "passed": 24,
+          "total": 26
+        },
+        "detectable_format:constrained_response": {
+          "passed": 9,
+          "total": 10
+        },
+        "detectable_format:json_format": {
+          "passed": 16,
+          "total": 17
+        },
+        "detectable_format:multiple_sections": {
+          "passed": 11,
+          "total": 14
+        },
+        "detectable_format:number_bullet_lists": {
+          "passed": 23,
+          "total": 31
+        },
+        "detectable_format:number_highlighted_sections": {
+          "passed": 26,
+          "total": 48
+        },
+        "detectable_format:title": {
+          "passed": 37,
+          "total": 37
+        },
+        "keywords:existence": {
+          "passed": 27,
+          "total": 39
+        },
+        "keywords:forbidden_words": {
+          "passed": 44,
+          "total": 49
+        },
+        "keywords:frequency": {
+          "passed": 30,
+          "total": 42
+        },
+        "keywords:letter_frequency": {
+          "passed": 15,
+          "total": 33
+        },
+        "language:response_language": {
+          "passed": 31,
+          "total": 31
+        },
+        "length_constraints:nth_paragraph_first_word": {
+          "passed": 7,
+          "total": 12
+        },
+        "length_constraints:number_paragraphs": {
+          "passed": 15,
+          "total": 27
+        },
+        "length_constraints:number_sentences": {
+          "passed": 37,
+          "total": 52
+        },
+        "length_constraints:number_words": {
+          "passed": 25,
+          "total": 52
+        },
+        "punctuation:no_comma": {
+          "passed": 56,
+          "total": 66
+        },
+        "startend:end_checker": {
+          "passed": 25,
+          "total": 26
+        },
+        "startend:quotation": {
+          "passed": 38,
+          "total": 41
+        }
+      },
+      "cases_file": "dpo_loose_cases.jsonl",
+      "cases_sha256": "d70a39ec4f124650c4c8cfbe588db1139778f7f64e1cc440def7ea38bb843c25"
+    }
+  },
+  "files_sha256": {
+    "dpo_ifeval\\generations.jsonl": "85b3193dc849f1339f67f426886035f44615d5f616c81b394cb440bf5608dc38",
+    "dpo_ifeval\\generation_run.json": "6c8adadd1c25bfc653dd173b284a7edd7566e41a62bc22f38f2a89ffe0d65651",
+    "dpo_ifeval_score\\eval_results_strict.jsonl": "344a1609a610e3cbd18bbc5f88fad70a4f7ae3a2a861a9995524d2cc75fa7881",
+    "dpo_ifeval_score\\eval_results_loose.jsonl": "372e1802c7c91c6e21ae422e279967ed1be388a945f694d4ffc66b387d01cdc2",
+    "dpo_ifeval_score\\run.json": "5ee420161021150fa81a2b991723f5c6d2f886a36eba66fc3eba8558111efee3"
+  }
+}

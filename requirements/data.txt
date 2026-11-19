@@ -1,0 +1,5 @@
+# CPU-only data/tokenizer tools. Does not install torch or model weights.
+datasets==3.6.0
+transformers==4.51.3
+Jinja2==3.1.6
+PyYAML==6.0.2

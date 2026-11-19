@@ -1,0 +1,15 @@
+{
+  "tests": {
+    "count": 74,
+    "result": "passed",
+    "log": "checkout_tests.txt",
+    "fresh_environment": true
+  },
+  "fresh_checkout": "runs/checkout_validation_20261117",
+  "smoke": "runs/checkout_validation_logs_20261117/checkout_smoke_20261117.json",
+  "gpu_training_completed": false,
+  "real_generation_completed": false,
+  "data_processing_completed": true,
+  "data_run": "data_20261117_verified_v2",
+  "git": "d46e4ee6e77b87db2fbceb8636414da923068e7f"
+}

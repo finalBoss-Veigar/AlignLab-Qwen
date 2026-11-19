@@ -1,0 +1,165 @@
+{
+  "models": {
+    "base": {
+      "strict": {
+        "n_prompts": 541,
+        "passed_prompts": 386,
+        "prompt_level": 0.7134935304990758,
+        "n_instructions": 834,
+        "passed_instructions": 659,
+        "instruction_level": 0.790167865707434,
+        "output_limit_reached": 6
+      },
+      "loose": {
+        "n_prompts": 541,
+        "passed_prompts": 400,
+        "prompt_level": 0.7393715341959335,
+        "n_instructions": 834,
+        "passed_instructions": 678,
+        "instruction_level": 0.8129496402877698,
+        "output_limit_reached": 6
+      }
+    },
+    "sft": {
+      "strict": {
+        "n_prompts": 541,
+        "passed_prompts": 323,
+        "prompt_level": 0.5970425138632163,
+        "n_instructions": 834,
+        "passed_instructions": 568,
+        "instruction_level": 0.6810551558752997,
+        "output_limit_reached": 20
+      },
+      "loose": {
+        "n_prompts": 541,
+        "passed_prompts": 334,
+        "prompt_level": 0.6173752310536045,
+        "n_instructions": 834,
+        "passed_instructions": 587,
+        "instruction_level": 0.7038369304556354,
+        "output_limit_reached": 20
+      }
+    },
+    "dpo": {
+      "strict": {
+        "n_prompts": 541,
+        "passed_prompts": 333,
+        "prompt_level": 0.6155268022181146,
+        "n_instructions": 834,
+        "passed_instructions": 587,
+        "instruction_level": 0.7038369304556354,
+        "output_limit_reached": 23
+      },
+      "loose": {
+        "n_prompts": 541,
+        "passed_prompts": 345,
+        "prompt_level": 0.6377079482439926,
+        "n_instructions": 834,
+        "passed_instructions": 606,
+        "instruction_level": 0.7266187050359713,
+        "output_limit_reached": 23
+      }
+    },
+    "dpo_beta005": {
+      "strict": {
+        "n_prompts": 541,
+        "passed_prompts": 334,
+        "prompt_level": 0.6173752310536045,
+        "n_instructions": 834,
+        "passed_instructions": 592,
+        "instruction_level": 0.709832134292566,
+        "output_limit_reached": 15
+      },
+      "loose": {
+        "n_prompts": 541,
+        "passed_prompts": 346,
+        "prompt_level": 0.6395563770794824,
+        "n_instructions": 834,
+        "passed_instructions": 612,
+        "instruction_level": 0.7338129496402878,
+        "output_limit_reached": 15
+      }
+    }
+  },
+  "comparisons": {
+    "sft_minus_base": {
+      "definition": "candidate minus baseline; one paired prompt is the resampling unit",
+      "n_prompts": 541,
+      "absolute_difference": -0.11645101663585952,
+      "percentage_point_difference": -11.645101663585953,
+      "paired_bootstrap_95_ci": [
+        -0.15526802218114602,
+        -0.07948243992606285
+      ],
+      "seed": 42,
+      "n_bootstrap": 2000,
+      "transitions": {
+        "both_pass": 295,
+        "both_fail": 127,
+        "improved": 28,
+        "regressed": 91
+      },
+      "limitations": "Single training seed; prompt bootstrap does not measure training-seed variability or remove benchmark contamination."
+    },
+    "dpo_minus_sft": {
+      "definition": "candidate minus baseline; one paired prompt is the resampling unit",
+      "n_prompts": 541,
+      "absolute_difference": 0.018484288354898338,
+      "percentage_point_difference": 1.8484288354898337,
+      "paired_bootstrap_95_ci": [
+        -0.0073937153419593345,
+        0.04251386321626617
+      ],
+      "seed": 42,
+      "n_bootstrap": 2000,
+      "transitions": {
+        "both_pass": 303,
+        "both_fail": 188,
+        "improved": 30,
+        "regressed": 20
+      },
+      "limitations": "Single training seed; prompt bootstrap does not measure training-seed variability or remove benchmark contamination."
+    },
+    "dpo_minus_base": {
+      "definition": "candidate minus baseline; one paired prompt is the resampling unit",
+      "n_prompts": 541,
+      "absolute_difference": -0.09796672828096119,
+      "percentage_point_difference": -9.796672828096119,
+      "paired_bootstrap_95_ci": [
+        -0.1367837338262477,
+        -0.06099815157116451
+      ],
+      "seed": 42,
+      "n_bootstrap": 2000,
+      "transitions": {
+        "both_pass": 303,
+        "both_fail": 125,
+        "improved": 30,
+        "regressed": 83
+      },
+      "limitations": "Single training seed; prompt bootstrap does not measure training-seed variability or remove benchmark contamination."
+    },
+    "dpo_beta005_minus_dpo": {
+      "definition": "candidate minus baseline; one paired prompt is the resampling unit",
+      "n_prompts": 541,
+      "absolute_difference": 0.0018484288354898336,
+      "percentage_point_difference": 0.18484288354898337,
+      "paired_bootstrap_95_ci": [
+        -0.024029574861367836,
+        0.029574861367837338
+      ],
+      "seed": 42,
+      "n_bootstrap": 2000,
+      "transitions": {
+        "both_pass": 305,
+        "both_fail": 179,
+        "improved": 29,
+        "regressed": 28
+      },
+      "limitations": "Single training seed; prompt bootstrap does not measure training-seed variability or remove benchmark contamination."
+    }
+  },
+  "pending": [],
+  "human_preference": null,
+  "human_preference_reason": "No human labels supplied to this official-IFEval summarizer"
+}

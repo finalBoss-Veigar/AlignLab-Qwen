@@ -1,0 +1,32 @@
+{
+  "status": "inputs_frozen_not_generated",
+  "seed": 42,
+  "counts": {
+    "ifeval": 541,
+    "preference_source": 2000,
+    "preferences": 200
+  },
+  "sources": {
+    "ifeval.jsonl": "f019cf84afc947377889f50fd6dfba34579413b6808ddc5ad7a5d860116d6a9e",
+    "ifeval_input.jsonl": "e70eff5741c219961cae25fc7972fe0d377f1f4702e63b567b7aa769baddf145",
+    "test_prefs.jsonl": "9d1bbe6766bedbb1afa12a6be967ca3ce4db28fb72e635844a82a6b2cd7c9990"
+  },
+  "outputs": {
+    "ifeval.jsonl": "58dc4b0596d573af8521c070301aff4081efe74d1ba697fb44d0ffdfb5d08479",
+    "ifeval_input.jsonl": "f4f4269278e7121da68a08302cd8cec62f2727b5f6989dc396dcf24613f81cac",
+    "preferences.jsonl": "91aa8708418213467ae83303d50d3da6a837cb2f7ae4336b78c2a11c37754100"
+  },
+  "generation": {
+    "do_sample": false,
+    "max_new_tokens": 2048,
+    "max_input_tokens": 4096,
+    "concurrency": 1,
+    "dtype": "model_config_auto"
+  },
+  "comparison": [
+    "original_instruct",
+    "continued_sft",
+    "sft_dpo"
+  ],
+  "selection_note": "Seeded prompt sample selected before any model output; never select by test score"
+}

@@ -1,0 +1,19 @@
+{
+  "started_utc": "2026-11-18T15:05:48.986199+00:00",
+  "versions": {
+    "numpy": "1.26.4",
+    "pyarrow": "19.0.1",
+    "torch": "2.6.0+cu124",
+    "transformers": "4.51.3",
+    "peft": "0.15.2",
+    "trl": "0.9.6",
+    "bitsandbytes": "0.45.5",
+    "datasets": "3.6.0",
+    "llamafactory": "0.9.3"
+  },
+  "status": "passed",
+  "gpu_training_verified": false,
+  "arrow_dataset_roundtrip": true,
+  "cuda_available": false,
+  "ended_utc": "2026-11-18T15:05:59.306191+00:00"
+}

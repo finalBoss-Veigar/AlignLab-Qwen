@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools==80.9.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "alignlab"
+version = "0.1.0"
+description = "Reproducible continued SFT and DPO experiment engineering"
+requires-python = ">=3.11,<3.14"
+dependencies = ["PyYAML==6.0.2"]
+
+[project.optional-dependencies]
+dev = ["pytest==8.3.5"]
+
+[project.scripts]
+alignlab = "alignlab.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"alignlab.training" = ["upstream_schema.json"]
+"alignlab.data" = ["*.schema.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"

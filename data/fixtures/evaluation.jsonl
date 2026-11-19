@@ -1,0 +1,3 @@
+{"prompt":"Name the largest ocean on Earth.","task_type":"factual","synthetic":true}
+{"prompt":"Write exactly two sentences about a lighthouse.","task_type":"instruction_following_development_only","synthetic":true}
+{"prompt":"Suggest a title for a story about a lost map.","task_type":"writing","synthetic":true}

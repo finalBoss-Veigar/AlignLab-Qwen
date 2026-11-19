@@ -1,0 +1,70 @@
+{
+  "qwen7b": {
+    "id": "Qwen/Qwen2.5-7B-Instruct",
+    "kind": "models",
+    "revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+    "license": "apache-2.0",
+    "access_date": "2026-11-13",
+    "status": "verified_metadata_and_card_only",
+    "url": "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct"
+  },
+  "qwen1_5b": {
+    "id": "Qwen/Qwen2.5-1.5B-Instruct",
+    "kind": "models",
+    "revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+    "license": "apache-2.0",
+    "access_date": "2026-11-13",
+    "status": "verified_metadata_and_card_only",
+    "url": "https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct"
+  },
+  "ultrachat": {
+    "id": "HuggingFaceH4/ultrachat_200k",
+    "kind": "datasets",
+    "revision": "8049631c405ae6576f93f445c6b8166f76f5505a",
+    "license": "mit",
+    "access_date": "2026-11-13",
+    "status": "verified_metadata_and_card_only",
+    "url": "https://huggingface.co/datasets/HuggingFaceH4/ultrachat_200k"
+  },
+  "ultrafeedback": {
+    "id": "HuggingFaceH4/ultrafeedback_binarized",
+    "kind": "datasets",
+    "revision": "3949bf5f8c17c394422ccfab0c31ea9c20bdeb85",
+    "license": "mit",
+    "access_date": "2026-11-13",
+    "status": "verified_metadata_and_card_only",
+    "url": "https://huggingface.co/datasets/HuggingFaceH4/ultrafeedback_binarized"
+  },
+  "ifeval_data": {
+    "id": "google/IFEval",
+    "kind": "datasets",
+    "revision": "966cd89545d6b6acfd7638bc708b98261ca58e84",
+    "license": "apache-2.0",
+    "access_date": "2026-11-13",
+    "status": "verified_metadata_and_card_only",
+    "url": "https://huggingface.co/datasets/google/IFEval"
+  },
+  "alignment_handbook": {
+    "revision": "53c11c328684f965162f41ff93185bb9e0448263",
+    "license": "Apache-2.0",
+    "access_date": "2026-11-13",
+    "url": "https://github.com/huggingface/alignment-handbook",
+    "status": "verified_pinned_git_checkout",
+    "network_note": "GitHub API 403 and a later urllib retry reset; recovered via git checkout and retained successful HF metadata snapshots."
+  },
+  "llamafactory": {
+    "revision": "ca75f1edf3cb50343ed1c98605141c3e22075b5f",
+    "tag": "v0.9.3",
+    "license": "Apache-2.0",
+    "access_date": "2026-11-13",
+    "url": "https://github.com/hiyouga/LlamaFactory",
+    "status": "verified_pinned_git_checkout"
+  },
+  "ifeval_code": {
+    "revision": "f8d6d14a1fc6eaef606d7d1e1fa4e96ee09afb81",
+    "license": "Apache-2.0",
+    "access_date": "2026-11-13",
+    "url": "https://github.com/google-research/google-research/tree/f8d6d14a1fc6eaef606d7d1e1fa4e96ee09afb81/instruction_following_eval",
+    "status": "verified_source_interface_not_executed"
+  }
+}

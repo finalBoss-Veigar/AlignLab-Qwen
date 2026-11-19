@@ -1,0 +1,59 @@
+{
+  "id": "list_format_20261120",
+  "started_at": "2026-11-19T16:11:44.394873+00:00",
+  "code_commit": "dcde8023943cd59f687990330be99914530dd384",
+  "worktree_at_start": [],
+  "script_sha256": "7f51579d3c1c981b6ec2364eade75088a2362a363defd7a06108ee8375322af9",
+  "data_manifest_sha256": "1b72ed8a1ac296d728f211680ab1e0f2f94719d706eeac806e6ec8181eaadf8c",
+  "argv": [
+    "python",
+    "scripts/audit_list_format.py",
+    "--data",
+    "data/processed/data_20261117_verified_v2",
+    "--output",
+    "runs/list_format_20261120/list_format_20261120.json"
+  ],
+  "environment": "Python 3.12.10, Windows AMD64, CPU",
+  "seed": null,
+  "splits": {
+    "train": {
+      "source": "sft_train.internal.jsonl",
+      "sha256": "8ac5e619f5be6718b0113cc10aa64206d907e761e8aae5c6d258843eda958376",
+      "dialogues": 14289,
+      "adjacent_user_assistant_pairs": 33184,
+      "dialogues_with_any_matched_turn": 6,
+      "detected_turns": {
+        "numbered": {
+          "zero": 0,
+          "one": 0,
+          "two_or_more": 0
+        },
+        "bulleted": {
+          "zero": 3,
+          "one": 0,
+          "two_or_more": 3
+        }
+      }
+    },
+    "validation": {
+      "source": "sft_validation.internal.jsonl",
+      "sha256": "5b4d47fa8c926948a181cf51dd0e5ee2e760ff24eed892199bf6adbf8d0e7c94",
+      "dialogues": 3650,
+      "adjacent_user_assistant_pairs": 8604,
+      "dialogues_with_any_matched_turn": 2,
+      "detected_turns": {
+        "numbered": {
+          "zero": 0,
+          "one": 0,
+          "two_or_more": 0
+        },
+        "bulleted": {
+          "zero": 1,
+          "one": 0,
+          "two_or_more": 1
+        }
+      }
+    }
+  },
+  "elapsed_seconds": 2.4
+}

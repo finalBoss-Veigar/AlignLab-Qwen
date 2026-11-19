@@ -1,0 +1,7 @@
+{
+  "mode": "synthetic_fixture",
+  "seed": 42,
+  "load_model": false,
+  "output": "data/processed/fixture",
+  "note": "CPU process verification only; never a real training result"
+}

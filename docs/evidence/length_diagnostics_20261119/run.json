@@ -1,0 +1,32 @@
+{
+  "experiment_id": "length_diagnostics_20261119",
+  "started_at": "2026-11-19T15:31:41.042162+00:00",
+  "status": "completed",
+  "purpose": "post_hoc_length_diagnostic_no_new_training",
+  "code_commit": "49dd38e906c48c4415224d69df3aee7b4ed13e9c",
+  "worktree_status": "?? scripts/analyze_length_diagnostics.py\n?? src/alignlab/evaluation/diagnostics.py\n?? tests/test_diagnostics.py\n",
+  "source_sha256": {
+    "scripts/analyze_length_diagnostics.py": "10cad03054fd7f4af7653567aee60a41c8b328bf9ade19c67456a307a5277f20",
+    "src/alignlab/evaluation/diagnostics.py": "247c354b56f8d2362c50755b0b0bbe5a585d66498bcd2f05e1971211fc9a9d9b"
+  },
+  "command": [
+    "python",
+    "scripts/analyze_length_diagnostics.py",
+    "--data",
+    "data/processed/data_20261117_verified_v2",
+    "--evidence",
+    "docs/evidence/formal_20261119",
+    "--output",
+    "runs/length_diagnostics_20261119"
+  ],
+  "python": "3.12.10",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "resource": "local CPU only; saved token counts and official scores; no model inference",
+  "random_seed": null,
+  "random_seed_reason": "deterministic descriptive counts; original training seed remains 42",
+  "result_sha256": "1c4d15c511f15d1f4f2687ca379f277500efc42a6d5b0ce3b4599f10e5977597",
+  "elapsed_seconds": 1.862931200004823,
+  "ended_at": "2026-11-19T15:31:42.905130+00:00",
+  "raw_local_run_sha256": "89d7911e8cdd2da020966000d382e6be350f05535d15b971bf90f47a31468a59",
+  "public_note": "Only the local interpreter absolute path is normalized; source commit, dirty state, source hashes and actual timing are retained."
+}

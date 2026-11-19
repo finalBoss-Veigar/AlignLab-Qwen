@@ -1,0 +1,18 @@
+{
+  "seed": 42,
+  "models": ["original_instruct", "continued_sft", "sft_dpo"],
+  "size_class": "7B",
+  "decoding": {"do_sample": false, "max_new_tokens": 512},
+  "chat_template": "same pinned Qwen tokenizer template for all arms",
+  "preference_source_split": "test_prefs",
+  "preference_prompt_budget": 200,
+  "bootstrap": {"unit": "prompt", "replicates": 2000, "confidence": 0.95},
+  "ifeval": {
+    "implementation_revision": "f8d6d14a1fc6eaef606d7d1e1fa4e96ee09afb81",
+    "dataset_id": "google/IFEval",
+    "dataset_revision": "966cd89545d6b6acfd7638bc708b98261ca58e84",
+    "split": "train",
+    "usage": "evaluation_only_never_tuning"
+  },
+  "llm_judge": {"enabled": false, "service": null, "reason": "requires explicit user service configuration"}
+}

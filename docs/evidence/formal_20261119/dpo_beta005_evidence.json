@@ -1,0 +1,347 @@
+{
+  "generation": {
+    "status": "completed",
+    "model_path": "/root/autodl-tmp/AlignLab/runs/artifacts/gpu_20261118/formal/dpo-beta005-merged",
+    "n_prompts": 541,
+    "model_revision": "e7de3f88fef8c1212be4277e76af2126c0b95a18e98f122505cf9cf16fe471d4",
+    "tokenizer_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+    "size_class": "7B",
+    "local_model_available": true,
+    "generation_count": 541,
+    "input_sha256": "1b1e4fbe3e1b72c90b23770abf285a9f6d456d73a7da33fe3215d2327f827d0e",
+    "device_requested": "cuda:0",
+    "timeout_seconds": 21837.0,
+    "max_input_tokens": 4096,
+    "decoding": {
+      "do_sample": false,
+      "max_new_tokens": 2048,
+      "num_beams": 1,
+      "min_new_tokens": 0,
+      "repetition_penalty": 1.05,
+      "eos_token_id": [
+        151643,
+        151645
+      ]
+    },
+    "partial_output_path": null,
+    "complete_evaluation": true,
+    "started_at": "2026-11-19T00:26:02.578389+00:00",
+    "code_commit": "68480227a00174cbf904d0a16efe3194a73e9f61",
+    "code_dirty": "",
+    "generator_sha256": "63db89ae8a21c936a1dce75370492b3ac27edc850d2f236c526f981521c16871",
+    "command": [
+      "/root/autodl-tmp/AlignLab/.venv-train/bin/python",
+      "/root/autodl-tmp/AlignLab/src/alignlab/__main__.py",
+      "generate",
+      "--input",
+      "/root/autodl-tmp/AlignLab/data/evaluation/protocol_20261119_canonical/ifeval.jsonl",
+      "--output",
+      "/root/autodl-tmp/AlignLab/runs/formal_20261119/dpo_beta005_ifeval",
+      "--model",
+      "/root/autodl-tmp/AlignLab/runs/artifacts/gpu_20261118/formal/dpo-beta005-merged",
+      "--tokenizer",
+      "/root/autodl-tmp/AlignLab/models/tokenizer-qwen7b",
+      "--revision",
+      "e7de3f88fef8c1212be4277e76af2126c0b95a18e98f122505cf9cf16fe471d4",
+      "--tokenizer-revision",
+      "a09a35458c702b33eeacc393d103063234e8bc28",
+      "--size-class",
+      "7B",
+      "--max-new-tokens",
+      "2048",
+      "--max-input-tokens",
+      "4096",
+      "--timeout-seconds",
+      "21837",
+      "--device",
+      "cuda:0",
+      "--execute"
+    ],
+    "working_directory": "/root/autodl-tmp/AlignLab",
+    "output_path": "/root/autodl-tmp/AlignLab/runs/formal_20261119/dpo_beta005_ifeval/generations.jsonl",
+    "device": "cuda:0",
+    "torch_version": "2.6.0+cu124",
+    "hardware": "NVIDIA A800 80GB PCIe",
+    "concurrency": 1,
+    "chat_template_sha256": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f",
+    "elapsed_seconds": 2980.1428651157767,
+    "ended_at": "2026-11-19T01:15:42.402101+00:00"
+  },
+  "scoring": {
+    "status": "completed",
+    "command": [
+      "/root/autodl-tmp/AlignLab/.venv-eval/bin/python",
+      "-m",
+      "instruction_following_eval.evaluation_main",
+      "--input_data=/root/autodl-tmp/AlignLab/runs/formal_20261119/dpo_beta005_ifeval_score/official_inputs.jsonl",
+      "--input_response_data=/root/autodl-tmp/AlignLab/runs/formal_20261119/dpo_beta005_ifeval/generations.jsonl",
+      "--output_dir=/root/autodl-tmp/AlignLab/runs/formal_20261119/dpo_beta005_ifeval_score"
+    ],
+    "cwd": "/root/autodl-tmp/AlignLab/vendor/google-research",
+    "implementation_revision": "f8d6d14a1fc6eaef606d7d1e1fa4e96ee09afb81",
+    "input_sha256": "d347ec7f648fa289990b966418e099ded068d7e9feb9f262b82cc20fb191e305",
+    "response_sha256": "5ffcdb44018b04c84b9933a70b71c7dea3ceeee454ed20c5e8d82fd8c6a684ed",
+    "n_prompts": 541,
+    "metrics": {
+      "implementation": "google-research/instruction_following_eval",
+      "implementation_revision": "f8d6d14a1fc6eaef606d7d1e1fa4e96ee09afb81",
+      "source_verified": true,
+      "scope": "full_official_dataset",
+      "strict": {
+        "prompt_level": 0.6173752310536045,
+        "instruction_level": 0.709832134292566,
+        "n_prompts": 541,
+        "n_instructions": 834
+      },
+      "loose": {
+        "prompt_level": 0.6395563770794824,
+        "instruction_level": 0.7338129496402878,
+        "n_prompts": 541,
+        "n_instructions": 834
+      },
+      "official_n_prompts": 541,
+      "synthetic": false,
+      "response_provenance": "generation_records"
+    },
+    "reason": null,
+    "dataset_scope": "full_official_dataset",
+    "official_n_prompts": 541,
+    "exit_code": 0,
+    "elapsed_seconds": 1.6758594680577517
+  },
+  "recomputed": {
+    "strict": {
+      "n_prompts": 541,
+      "passed_prompts": 334,
+      "prompt_level": 0.6173752310536045,
+      "n_instructions": 834,
+      "passed_instructions": 592,
+      "instruction_level": 0.709832134292566,
+      "output_limit_reached": 15,
+      "by_instruction": {
+        "change_case:capital_word_frequency": {
+          "passed": 17,
+          "total": 25
+        },
+        "change_case:english_capital": {
+          "passed": 17,
+          "total": 25
+        },
+        "change_case:english_lowercase": {
+          "passed": 22,
+          "total": 39
+        },
+        "combination:repeat_prompt": {
+          "passed": 20,
+          "total": 41
+        },
+        "combination:two_responses": {
+          "passed": 19,
+          "total": 24
+        },
+        "detectable_content:number_placeholders": {
+          "passed": 18,
+          "total": 27
+        },
+        "detectable_content:postscript": {
+          "passed": 24,
+          "total": 26
+        },
+        "detectable_format:constrained_response": {
+          "passed": 9,
+          "total": 10
+        },
+        "detectable_format:json_format": {
+          "passed": 15,
+          "total": 17
+        },
+        "detectable_format:multiple_sections": {
+          "passed": 11,
+          "total": 14
+        },
+        "detectable_format:number_bullet_lists": {
+          "passed": 25,
+          "total": 31
+        },
+        "detectable_format:number_highlighted_sections": {
+          "passed": 29,
+          "total": 48
+        },
+        "detectable_format:title": {
+          "passed": 37,
+          "total": 37
+        },
+        "keywords:existence": {
+          "passed": 28,
+          "total": 39
+        },
+        "keywords:forbidden_words": {
+          "passed": 36,
+          "total": 49
+        },
+        "keywords:frequency": {
+          "passed": 30,
+          "total": 42
+        },
+        "keywords:letter_frequency": {
+          "passed": 14,
+          "total": 33
+        },
+        "language:response_language": {
+          "passed": 31,
+          "total": 31
+        },
+        "length_constraints:nth_paragraph_first_word": {
+          "passed": 3,
+          "total": 12
+        },
+        "length_constraints:number_paragraphs": {
+          "passed": 13,
+          "total": 27
+        },
+        "length_constraints:number_sentences": {
+          "passed": 37,
+          "total": 52
+        },
+        "length_constraints:number_words": {
+          "passed": 25,
+          "total": 52
+        },
+        "punctuation:no_comma": {
+          "passed": 52,
+          "total": 66
+        },
+        "startend:end_checker": {
+          "passed": 23,
+          "total": 26
+        },
+        "startend:quotation": {
+          "passed": 37,
+          "total": 41
+        }
+      },
+      "cases_file": "dpo_beta005_strict_cases.jsonl",
+      "cases_sha256": "edc07c96926f24d339a0ba8928ed18a423227ad2d98d1c2e3be17e93f6b069fc"
+    },
+    "loose": {
+      "n_prompts": 541,
+      "passed_prompts": 346,
+      "prompt_level": 0.6395563770794824,
+      "n_instructions": 834,
+      "passed_instructions": 612,
+      "instruction_level": 0.7338129496402878,
+      "output_limit_reached": 15,
+      "by_instruction": {
+        "change_case:capital_word_frequency": {
+          "passed": 17,
+          "total": 25
+        },
+        "change_case:english_capital": {
+          "passed": 17,
+          "total": 25
+        },
+        "change_case:english_lowercase": {
+          "passed": 22,
+          "total": 39
+        },
+        "combination:repeat_prompt": {
+          "passed": 20,
+          "total": 41
+        },
+        "combination:two_responses": {
+          "passed": 19,
+          "total": 24
+        },
+        "detectable_content:number_placeholders": {
+          "passed": 18,
+          "total": 27
+        },
+        "detectable_content:postscript": {
+          "passed": 24,
+          "total": 26
+        },
+        "detectable_format:constrained_response": {
+          "passed": 9,
+          "total": 10
+        },
+        "detectable_format:json_format": {
+          "passed": 16,
+          "total": 17
+        },
+        "detectable_format:multiple_sections": {
+          "passed": 11,
+          "total": 14
+        },
+        "detectable_format:number_bullet_lists": {
+          "passed": 25,
+          "total": 31
+        },
+        "detectable_format:number_highlighted_sections": {
+          "passed": 29,
+          "total": 48
+        },
+        "detectable_format:title": {
+          "passed": 37,
+          "total": 37
+        },
+        "keywords:existence": {
+          "passed": 28,
+          "total": 39
+        },
+        "keywords:forbidden_words": {
+          "passed": 41,
+          "total": 49
+        },
+        "keywords:frequency": {
+          "passed": 31,
+          "total": 42
+        },
+        "keywords:letter_frequency": {
+          "passed": 14,
+          "total": 33
+        },
+        "language:response_language": {
+          "passed": 31,
+          "total": 31
+        },
+        "length_constraints:nth_paragraph_first_word": {
+          "passed": 7,
+          "total": 12
+        },
+        "length_constraints:number_paragraphs": {
+          "passed": 15,
+          "total": 27
+        },
+        "length_constraints:number_sentences": {
+          "passed": 38,
+          "total": 52
+        },
+        "length_constraints:number_words": {
+          "passed": 26,
+          "total": 52
+        },
+        "punctuation:no_comma": {
+          "passed": 56,
+          "total": 66
+        },
+        "startend:end_checker": {
+          "passed": 23,
+          "total": 26
+        },
+        "startend:quotation": {
+          "passed": 38,
+          "total": 41
+        }
+      },
+      "cases_file": "dpo_beta005_loose_cases.jsonl",
+      "cases_sha256": "be422737240fe9c5e1277a91c229273d9a7ed109b1c6c4810a76ec87fea7ccef"
+    }
+  },
+  "files_sha256": {
+    "dpo_beta005_ifeval\\generations.jsonl": "a9a37c6ff92e985225066ab3e6a16a3dbda8fb3fd21936606e91ecbbdf0c6c7d",
+    "dpo_beta005_ifeval\\generation_run.json": "175572e9480bfd2cb4d8ef02b1f3c6b61a494a049b0872394da7ae7904a22b5c",
+    "dpo_beta005_ifeval_score\\eval_results_strict.jsonl": "e8332af7708325ec594b4a42a116258a34429e23b8d2d1993eeab6a5382f248b",
+    "dpo_beta005_ifeval_score\\eval_results_loose.jsonl": "0f1761a67bb1c41de62efaaa676108d05c4968a78ce3882dbeca52f1a319d1a9",
+    "dpo_beta005_ifeval_score\\run.json": "506f768d45b200d615ff58981bd4a57ad65ca7bb90cd1d68967ee6c4ccf300c6"
+  }
+}

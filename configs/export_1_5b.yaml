@@ -1,0 +1,10 @@
+model_name_or_path: Qwen/Qwen2.5-1.5B-Instruct
+model_revision: 989aa7980e4cf806f80c7fef2b1adb7bc71aa306
+adapter_name_or_path: runs/artifacts/qwen-1.5b-sft
+template: qwen
+finetuning_type: lora
+trust_remote_code: false
+export_dir: runs/artifacts/qwen-1.5b-sft-merged
+export_size: 5
+export_device: cpu
+export_legacy_format: false

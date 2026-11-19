@@ -1,0 +1,9 @@
+model_name_or_path: runs/artifacts/gpu_20261118/preflight/sft-merged
+adapter_name_or_path: runs/artifacts/gpu_20261118/preflight/dpo
+template: qwen
+finetuning_type: lora
+trust_remote_code: false
+export_dir: runs/artifacts/gpu_20261118/preflight/dpo-merged
+export_size: 5
+export_device: cpu
+export_legacy_format: false

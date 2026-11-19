@@ -1,0 +1,1494 @@
+{
+  "sft_7b.yaml": {
+    "status": "static_fields_passed",
+    "framework_commit": "ca75f1edf3cb50343ed1c98605141c3e22075b5f",
+    "official_parser": "not_run",
+    "gpu_execution": "not_validated",
+    "field_evidence": {
+      "model_name_or_path": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+        "line": 33,
+        "type": "Optional[str]",
+        "class": "BaseModelArguments"
+      },
+      "model_revision": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+        "line": 78,
+        "type": "str",
+        "class": "BaseModelArguments"
+      },
+      "trust_remote_code": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+        "line": 170,
+        "type": "bool",
+        "class": "BaseModelArguments"
+      },
+      "quantization_bit": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+        "line": 200,
+        "type": "Optional[int]",
+        "class": "QuantizationArguments"
+      },
+      "quantization_method": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+        "line": 196,
+        "type": "QuantizationMethod",
+        "class": "QuantizationArguments"
+      },
+      "quantization_type": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+        "line": 204,
+        "type": "Literal['fp4', 'nf4']",
+        "class": "QuantizationArguments"
+      },
+      "double_quantization": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+        "line": 208,
+        "type": "bool",
+        "class": "QuantizationArguments"
+      },
+      "stage": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+        "line": 407,
+        "type": "Literal['pt', 'sft', 'rm', 'ppo', 'dpo', 'kto']",
+        "class": "FinetuningArguments"
+      },
+      "do_train": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 833,
+        "type": "bool",
+        "class": "TrainingArguments"
+      },
+      "finetuning_type": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+        "line": 411,
+        "type": "Literal['lora', 'freeze', 'full']",
+        "class": "FinetuningArguments"
+      },
+      "lora_rank": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+        "line": 77,
+        "type": "int",
+        "class": "LoraArguments"
+      },
+      "lora_alpha": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+        "line": 69,
+        "type": "Optional[int]",
+        "class": "LoraArguments"
+      },
+      "lora_target": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+        "line": 81,
+        "type": "str",
+        "class": "LoraArguments"
+      },
+      "lora_dropout": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+        "line": 73,
+        "type": "float",
+        "class": "LoraArguments"
+      },
+      "template": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/data_args.py",
+        "line": 26,
+        "type": "Optional[str]",
+        "class": "DataArguments"
+      },
+      "cutoff_len": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/data_args.py",
+        "line": 46,
+        "type": "int",
+        "class": "DataArguments"
+      },
+      "dataset": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/data_args.py",
+        "line": 30,
+        "type": "Optional[str]",
+        "class": "DataArguments"
+      },
+      "eval_dataset": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/data_args.py",
+        "line": 34,
+        "type": "Optional[str]",
+        "class": "DataArguments"
+      },
+      "dataset_dir": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/data_args.py",
+        "line": 38,
+        "type": "str",
+        "class": "DataArguments"
+      },
+      "packing": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/data_args.py",
+        "line": 106,
+        "type": "Optional[bool]",
+        "class": "DataArguments"
+      },
+      "train_on_prompt": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/data_args.py",
+        "line": 50,
+        "type": "bool",
+        "class": "DataArguments"
+      },
+      "ignore_pad_token_for_loss": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/data_args.py",
+        "line": 94,
+        "type": "bool",
+        "class": "DataArguments"
+      },
+      "mask_history": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/data_args.py",
+        "line": 54,
+        "type": "bool",
+        "class": "DataArguments"
+      },
+      "preprocessing_num_workers": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/data_args.py",
+        "line": 82,
+        "type": "Optional[int]",
+        "class": "DataArguments"
+      },
+      "dataloader_num_workers": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 1154,
+        "type": "int",
+        "class": "TrainingArguments"
+      },
+      "output_dir": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 817,
+        "type": "Optional[str]",
+        "class": "TrainingArguments"
+      },
+      "logging_steps": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 961,
+        "type": "float",
+        "class": "TrainingArguments"
+      },
+      "save_steps": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 975,
+        "type": "float",
+        "class": "TrainingArguments"
+      },
+      "save_total_limit": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 984,
+        "type": "Optional[int]",
+        "class": "TrainingArguments"
+      },
+      "save_only_model": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 1013,
+        "type": "bool",
+        "class": "TrainingArguments"
+      },
+      "overwrite_output_dir": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 823,
+        "type": "bool",
+        "class": "TrainingArguments"
+      },
+      "report_to": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 1311,
+        "type": "Union[None, str, list[str]]",
+        "class": "TrainingArguments"
+      },
+      "per_device_train_batch_size": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 845,
+        "type": "int",
+        "class": "TrainingArguments"
+      },
+      "gradient_accumulation_steps": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 871,
+        "type": "int",
+        "class": "TrainingArguments"
+      },
+      "learning_rate": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 899,
+        "type": "float",
+        "class": "TrainingArguments"
+      },
+      "num_train_epochs": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 906,
+        "type": "float",
+        "class": "TrainingArguments"
+      },
+      "lr_scheduler_type": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 911,
+        "type": "Union[SchedulerType, str]",
+        "class": "TrainingArguments"
+      },
+      "warmup_ratio": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 923,
+        "type": "float",
+        "class": "TrainingArguments"
+      },
+      "bf16": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 1061,
+        "type": "bool",
+        "class": "TrainingArguments"
+      },
+      "fp16": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 1070,
+        "type": "bool",
+        "class": "TrainingArguments"
+      },
+      "gradient_checkpointing": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 1381,
+        "type": "bool",
+        "class": "TrainingArguments"
+      },
+      "disable_gradient_checkpointing": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+        "line": 118,
+        "type": "bool",
+        "class": "BaseModelArguments"
+      },
+      "eval_strategy": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 836,
+        "type": "Union[IntervalStrategy, str]",
+        "class": "TrainingArguments"
+      },
+      "eval_steps": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 1145,
+        "type": "Optional[float]",
+        "class": "TrainingArguments"
+      },
+      "per_device_eval_batch_size": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 848,
+        "type": "int",
+        "class": "TrainingArguments"
+      },
+      "seed": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 1047,
+        "type": "int",
+        "class": "TrainingArguments"
+      },
+      "data_seed": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 1048,
+        "type": "Optional[int]",
+        "class": "TrainingArguments"
+      },
+      "resume_from_checkpoint": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 1359,
+        "type": "Optional[str]",
+        "class": "TrainingArguments"
+      }
+    }
+  },
+  "dpo_7b.yaml": {
+    "status": "static_fields_passed",
+    "framework_commit": "ca75f1edf3cb50343ed1c98605141c3e22075b5f",
+    "official_parser": "not_run",
+    "gpu_execution": "not_validated",
+    "field_evidence": {
+      "model_name_or_path": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+        "line": 33,
+        "type": "Optional[str]",
+        "class": "BaseModelArguments"
+      },
+      "trust_remote_code": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+        "line": 170,
+        "type": "bool",
+        "class": "BaseModelArguments"
+      },
+      "quantization_bit": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+        "line": 200,
+        "type": "Optional[int]",
+        "class": "QuantizationArguments"
+      },
+      "quantization_method": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+        "line": 196,
+        "type": "QuantizationMethod",
+        "class": "QuantizationArguments"
+      },
+      "quantization_type": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+        "line": 204,
+        "type": "Literal['fp4', 'nf4']",
+        "class": "QuantizationArguments"
+      },
+      "double_quantization": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+        "line": 208,
+        "type": "bool",
+        "class": "QuantizationArguments"
+      },
+      "stage": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+        "line": 407,
+        "type": "Literal['pt', 'sft', 'rm', 'ppo', 'dpo', 'kto']",
+        "class": "FinetuningArguments"
+      },
+      "do_train": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 833,
+        "type": "bool",
+        "class": "TrainingArguments"
+      },
+      "finetuning_type": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+        "line": 411,
+        "type": "Literal['lora', 'freeze', 'full']",
+        "class": "FinetuningArguments"
+      },
+      "lora_rank": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+        "line": 77,
+        "type": "int",
+        "class": "LoraArguments"
+      },
+      "lora_alpha": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+        "line": 69,
+        "type": "Optional[int]",
+        "class": "LoraArguments"
+      },
+      "lora_target": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+        "line": 81,
+        "type": "str",
+        "class": "LoraArguments"
+      },
+      "lora_dropout": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+        "line": 73,
+        "type": "float",
+        "class": "LoraArguments"
+      },
+      "template": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/data_args.py",
+        "line": 26,
+        "type": "Optional[str]",
+        "class": "DataArguments"
+      },
+      "cutoff_len": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/data_args.py",
+        "line": 46,
+        "type": "int",
+        "class": "DataArguments"
+      },
+      "dataset": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/data_args.py",
+        "line": 30,
+        "type": "Optional[str]",
+        "class": "DataArguments"
+      },
+      "eval_dataset": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/data_args.py",
+        "line": 34,
+        "type": "Optional[str]",
+        "class": "DataArguments"
+      },
+      "dataset_dir": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/data_args.py",
+        "line": 38,
+        "type": "str",
+        "class": "DataArguments"
+      },
+      "packing": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/data_args.py",
+        "line": 106,
+        "type": "Optional[bool]",
+        "class": "DataArguments"
+      },
+      "train_on_prompt": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/data_args.py",
+        "line": 50,
+        "type": "bool",
+        "class": "DataArguments"
+      },
+      "ignore_pad_token_for_loss": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/data_args.py",
+        "line": 94,
+        "type": "bool",
+        "class": "DataArguments"
+      },
+      "mask_history": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/data_args.py",
+        "line": 54,
+        "type": "bool",
+        "class": "DataArguments"
+      },
+      "preprocessing_num_workers": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/data_args.py",
+        "line": 82,
+        "type": "Optional[int]",
+        "class": "DataArguments"
+      },
+      "dataloader_num_workers": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 1154,
+        "type": "int",
+        "class": "TrainingArguments"
+      },
+      "output_dir": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 817,
+        "type": "Optional[str]",
+        "class": "TrainingArguments"
+      },
+      "logging_steps": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 961,
+        "type": "float",
+        "class": "TrainingArguments"
+      },
+      "save_steps": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 975,
+        "type": "float",
+        "class": "TrainingArguments"
+      },
+      "save_total_limit": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 984,
+        "type": "Optional[int]",
+        "class": "TrainingArguments"
+      },
+      "save_only_model": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 1013,
+        "type": "bool",
+        "class": "TrainingArguments"
+      },
+      "overwrite_output_dir": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 823,
+        "type": "bool",
+        "class": "TrainingArguments"
+      },
+      "report_to": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 1311,
+        "type": "Union[None, str, list[str]]",
+        "class": "TrainingArguments"
+      },
+      "per_device_train_batch_size": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 845,
+        "type": "int",
+        "class": "TrainingArguments"
+      },
+      "gradient_accumulation_steps": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 871,
+        "type": "int",
+        "class": "TrainingArguments"
+      },
+      "learning_rate": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 899,
+        "type": "float",
+        "class": "TrainingArguments"
+      },
+      "num_train_epochs": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 906,
+        "type": "float",
+        "class": "TrainingArguments"
+      },
+      "lr_scheduler_type": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 911,
+        "type": "Union[SchedulerType, str]",
+        "class": "TrainingArguments"
+      },
+      "warmup_ratio": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 923,
+        "type": "float",
+        "class": "TrainingArguments"
+      },
+      "bf16": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 1061,
+        "type": "bool",
+        "class": "TrainingArguments"
+      },
+      "fp16": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 1070,
+        "type": "bool",
+        "class": "TrainingArguments"
+      },
+      "gradient_checkpointing": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 1381,
+        "type": "bool",
+        "class": "TrainingArguments"
+      },
+      "disable_gradient_checkpointing": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+        "line": 118,
+        "type": "bool",
+        "class": "BaseModelArguments"
+      },
+      "eval_strategy": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 836,
+        "type": "Union[IntervalStrategy, str]",
+        "class": "TrainingArguments"
+      },
+      "eval_steps": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 1145,
+        "type": "Optional[float]",
+        "class": "TrainingArguments"
+      },
+      "per_device_eval_batch_size": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 848,
+        "type": "int",
+        "class": "TrainingArguments"
+      },
+      "seed": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 1047,
+        "type": "int",
+        "class": "TrainingArguments"
+      },
+      "data_seed": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 1048,
+        "type": "Optional[int]",
+        "class": "TrainingArguments"
+      },
+      "resume_from_checkpoint": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 1359,
+        "type": "Optional[str]",
+        "class": "TrainingArguments"
+      },
+      "create_new_adapter": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+        "line": 119,
+        "type": "bool",
+        "class": "LoraArguments"
+      },
+      "pref_loss": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+        "line": 137,
+        "type": "Literal['sigmoid', 'hinge', 'ipo', 'kto_pair', 'orpo', 'simpo']",
+        "class": "RLHFArguments"
+      },
+      "pref_beta": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+        "line": 129,
+        "type": "float",
+        "class": "RLHFArguments"
+      },
+      "dpo_label_smoothing": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+        "line": 141,
+        "type": "float",
+        "class": "RLHFArguments"
+      }
+    }
+  },
+  "debug_1_5b.yaml": {
+    "status": "static_fields_passed",
+    "framework_commit": "ca75f1edf3cb50343ed1c98605141c3e22075b5f",
+    "official_parser": "not_run",
+    "gpu_execution": "not_validated",
+    "field_evidence": {
+      "model_name_or_path": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+        "line": 33,
+        "type": "Optional[str]",
+        "class": "BaseModelArguments"
+      },
+      "model_revision": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+        "line": 78,
+        "type": "str",
+        "class": "BaseModelArguments"
+      },
+      "trust_remote_code": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+        "line": 170,
+        "type": "bool",
+        "class": "BaseModelArguments"
+      },
+      "quantization_bit": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+        "line": 200,
+        "type": "Optional[int]",
+        "class": "QuantizationArguments"
+      },
+      "quantization_method": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+        "line": 196,
+        "type": "QuantizationMethod",
+        "class": "QuantizationArguments"
+      },
+      "quantization_type": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+        "line": 204,
+        "type": "Literal['fp4', 'nf4']",
+        "class": "QuantizationArguments"
+      },
+      "double_quantization": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+        "line": 208,
+        "type": "bool",
+        "class": "QuantizationArguments"
+      },
+      "stage": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+        "line": 407,
+        "type": "Literal['pt', 'sft', 'rm', 'ppo', 'dpo', 'kto']",
+        "class": "FinetuningArguments"
+      },
+      "do_train": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 833,
+        "type": "bool",
+        "class": "TrainingArguments"
+      },
+      "finetuning_type": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+        "line": 411,
+        "type": "Literal['lora', 'freeze', 'full']",
+        "class": "FinetuningArguments"
+      },
+      "lora_rank": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+        "line": 77,
+        "type": "int",
+        "class": "LoraArguments"
+      },
+      "lora_alpha": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+        "line": 69,
+        "type": "Optional[int]",
+        "class": "LoraArguments"
+      },
+      "lora_target": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+        "line": 81,
+        "type": "str",
+        "class": "LoraArguments"
+      },
+      "lora_dropout": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+        "line": 73,
+        "type": "float",
+        "class": "LoraArguments"
+      },
+      "template": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/data_args.py",
+        "line": 26,
+        "type": "Optional[str]",
+        "class": "DataArguments"
+      },
+      "cutoff_len": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/data_args.py",
+        "line": 46,
+        "type": "int",
+        "class": "DataArguments"
+      },
+      "dataset": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/data_args.py",
+        "line": 30,
+        "type": "Optional[str]",
+        "class": "DataArguments"
+      },
+      "eval_dataset": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/data_args.py",
+        "line": 34,
+        "type": "Optional[str]",
+        "class": "DataArguments"
+      },
+      "dataset_dir": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/data_args.py",
+        "line": 38,
+        "type": "str",
+        "class": "DataArguments"
+      },
+      "packing": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/data_args.py",
+        "line": 106,
+        "type": "Optional[bool]",
+        "class": "DataArguments"
+      },
+      "train_on_prompt": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/data_args.py",
+        "line": 50,
+        "type": "bool",
+        "class": "DataArguments"
+      },
+      "ignore_pad_token_for_loss": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/data_args.py",
+        "line": 94,
+        "type": "bool",
+        "class": "DataArguments"
+      },
+      "mask_history": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/data_args.py",
+        "line": 54,
+        "type": "bool",
+        "class": "DataArguments"
+      },
+      "preprocessing_num_workers": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/data_args.py",
+        "line": 82,
+        "type": "Optional[int]",
+        "class": "DataArguments"
+      },
+      "dataloader_num_workers": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 1154,
+        "type": "int",
+        "class": "TrainingArguments"
+      },
+      "output_dir": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 817,
+        "type": "Optional[str]",
+        "class": "TrainingArguments"
+      },
+      "logging_steps": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 961,
+        "type": "float",
+        "class": "TrainingArguments"
+      },
+      "save_steps": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 975,
+        "type": "float",
+        "class": "TrainingArguments"
+      },
+      "save_total_limit": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 984,
+        "type": "Optional[int]",
+        "class": "TrainingArguments"
+      },
+      "save_only_model": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 1013,
+        "type": "bool",
+        "class": "TrainingArguments"
+      },
+      "overwrite_output_dir": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 823,
+        "type": "bool",
+        "class": "TrainingArguments"
+      },
+      "report_to": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 1311,
+        "type": "Union[None, str, list[str]]",
+        "class": "TrainingArguments"
+      },
+      "per_device_train_batch_size": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 845,
+        "type": "int",
+        "class": "TrainingArguments"
+      },
+      "gradient_accumulation_steps": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 871,
+        "type": "int",
+        "class": "TrainingArguments"
+      },
+      "learning_rate": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 899,
+        "type": "float",
+        "class": "TrainingArguments"
+      },
+      "num_train_epochs": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 906,
+        "type": "float",
+        "class": "TrainingArguments"
+      },
+      "lr_scheduler_type": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 911,
+        "type": "Union[SchedulerType, str]",
+        "class": "TrainingArguments"
+      },
+      "warmup_ratio": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 923,
+        "type": "float",
+        "class": "TrainingArguments"
+      },
+      "bf16": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 1061,
+        "type": "bool",
+        "class": "TrainingArguments"
+      },
+      "fp16": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 1070,
+        "type": "bool",
+        "class": "TrainingArguments"
+      },
+      "gradient_checkpointing": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 1381,
+        "type": "bool",
+        "class": "TrainingArguments"
+      },
+      "disable_gradient_checkpointing": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+        "line": 118,
+        "type": "bool",
+        "class": "BaseModelArguments"
+      },
+      "eval_strategy": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 836,
+        "type": "Union[IntervalStrategy, str]",
+        "class": "TrainingArguments"
+      },
+      "eval_steps": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 1145,
+        "type": "Optional[float]",
+        "class": "TrainingArguments"
+      },
+      "per_device_eval_batch_size": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 848,
+        "type": "int",
+        "class": "TrainingArguments"
+      },
+      "seed": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 1047,
+        "type": "int",
+        "class": "TrainingArguments"
+      },
+      "data_seed": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 1048,
+        "type": "Optional[int]",
+        "class": "TrainingArguments"
+      },
+      "resume_from_checkpoint": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 1359,
+        "type": "Optional[str]",
+        "class": "TrainingArguments"
+      },
+      "max_steps": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 907,
+        "type": "int",
+        "class": "TrainingArguments"
+      }
+    }
+  },
+  "dpo_1_5b.yaml": {
+    "status": "static_fields_passed",
+    "framework_commit": "ca75f1edf3cb50343ed1c98605141c3e22075b5f",
+    "official_parser": "not_run",
+    "gpu_execution": "not_validated",
+    "field_evidence": {
+      "model_name_or_path": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+        "line": 33,
+        "type": "Optional[str]",
+        "class": "BaseModelArguments"
+      },
+      "trust_remote_code": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+        "line": 170,
+        "type": "bool",
+        "class": "BaseModelArguments"
+      },
+      "quantization_bit": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+        "line": 200,
+        "type": "Optional[int]",
+        "class": "QuantizationArguments"
+      },
+      "quantization_method": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+        "line": 196,
+        "type": "QuantizationMethod",
+        "class": "QuantizationArguments"
+      },
+      "quantization_type": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+        "line": 204,
+        "type": "Literal['fp4', 'nf4']",
+        "class": "QuantizationArguments"
+      },
+      "double_quantization": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+        "line": 208,
+        "type": "bool",
+        "class": "QuantizationArguments"
+      },
+      "stage": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+        "line": 407,
+        "type": "Literal['pt', 'sft', 'rm', 'ppo', 'dpo', 'kto']",
+        "class": "FinetuningArguments"
+      },
+      "do_train": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 833,
+        "type": "bool",
+        "class": "TrainingArguments"
+      },
+      "finetuning_type": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+        "line": 411,
+        "type": "Literal['lora', 'freeze', 'full']",
+        "class": "FinetuningArguments"
+      },
+      "lora_rank": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+        "line": 77,
+        "type": "int",
+        "class": "LoraArguments"
+      },
+      "lora_alpha": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+        "line": 69,
+        "type": "Optional[int]",
+        "class": "LoraArguments"
+      },
+      "lora_target": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+        "line": 81,
+        "type": "str",
+        "class": "LoraArguments"
+      },
+      "lora_dropout": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+        "line": 73,
+        "type": "float",
+        "class": "LoraArguments"
+      },
+      "template": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/data_args.py",
+        "line": 26,
+        "type": "Optional[str]",
+        "class": "DataArguments"
+      },
+      "cutoff_len": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/data_args.py",
+        "line": 46,
+        "type": "int",
+        "class": "DataArguments"
+      },
+      "dataset": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/data_args.py",
+        "line": 30,
+        "type": "Optional[str]",
+        "class": "DataArguments"
+      },
+      "eval_dataset": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/data_args.py",
+        "line": 34,
+        "type": "Optional[str]",
+        "class": "DataArguments"
+      },
+      "dataset_dir": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/data_args.py",
+        "line": 38,
+        "type": "str",
+        "class": "DataArguments"
+      },
+      "packing": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/data_args.py",
+        "line": 106,
+        "type": "Optional[bool]",
+        "class": "DataArguments"
+      },
+      "train_on_prompt": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/data_args.py",
+        "line": 50,
+        "type": "bool",
+        "class": "DataArguments"
+      },
+      "ignore_pad_token_for_loss": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/data_args.py",
+        "line": 94,
+        "type": "bool",
+        "class": "DataArguments"
+      },
+      "mask_history": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/data_args.py",
+        "line": 54,
+        "type": "bool",
+        "class": "DataArguments"
+      },
+      "preprocessing_num_workers": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/data_args.py",
+        "line": 82,
+        "type": "Optional[int]",
+        "class": "DataArguments"
+      },
+      "dataloader_num_workers": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 1154,
+        "type": "int",
+        "class": "TrainingArguments"
+      },
+      "output_dir": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 817,
+        "type": "Optional[str]",
+        "class": "TrainingArguments"
+      },
+      "logging_steps": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 961,
+        "type": "float",
+        "class": "TrainingArguments"
+      },
+      "save_steps": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 975,
+        "type": "float",
+        "class": "TrainingArguments"
+      },
+      "save_total_limit": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 984,
+        "type": "Optional[int]",
+        "class": "TrainingArguments"
+      },
+      "save_only_model": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 1013,
+        "type": "bool",
+        "class": "TrainingArguments"
+      },
+      "overwrite_output_dir": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 823,
+        "type": "bool",
+        "class": "TrainingArguments"
+      },
+      "report_to": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 1311,
+        "type": "Union[None, str, list[str]]",
+        "class": "TrainingArguments"
+      },
+      "per_device_train_batch_size": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 845,
+        "type": "int",
+        "class": "TrainingArguments"
+      },
+      "gradient_accumulation_steps": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 871,
+        "type": "int",
+        "class": "TrainingArguments"
+      },
+      "learning_rate": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 899,
+        "type": "float",
+        "class": "TrainingArguments"
+      },
+      "num_train_epochs": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 906,
+        "type": "float",
+        "class": "TrainingArguments"
+      },
+      "lr_scheduler_type": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 911,
+        "type": "Union[SchedulerType, str]",
+        "class": "TrainingArguments"
+      },
+      "warmup_ratio": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 923,
+        "type": "float",
+        "class": "TrainingArguments"
+      },
+      "bf16": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 1061,
+        "type": "bool",
+        "class": "TrainingArguments"
+      },
+      "fp16": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 1070,
+        "type": "bool",
+        "class": "TrainingArguments"
+      },
+      "gradient_checkpointing": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 1381,
+        "type": "bool",
+        "class": "TrainingArguments"
+      },
+      "disable_gradient_checkpointing": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+        "line": 118,
+        "type": "bool",
+        "class": "BaseModelArguments"
+      },
+      "eval_strategy": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 836,
+        "type": "Union[IntervalStrategy, str]",
+        "class": "TrainingArguments"
+      },
+      "eval_steps": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 1145,
+        "type": "Optional[float]",
+        "class": "TrainingArguments"
+      },
+      "per_device_eval_batch_size": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 848,
+        "type": "int",
+        "class": "TrainingArguments"
+      },
+      "seed": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 1047,
+        "type": "int",
+        "class": "TrainingArguments"
+      },
+      "data_seed": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 1048,
+        "type": "Optional[int]",
+        "class": "TrainingArguments"
+      },
+      "resume_from_checkpoint": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 1359,
+        "type": "Optional[str]",
+        "class": "TrainingArguments"
+      },
+      "max_steps": {
+        "file": "vendor/transformers-4.51.3/training_args.py",
+        "line": 907,
+        "type": "int",
+        "class": "TrainingArguments"
+      },
+      "create_new_adapter": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+        "line": 119,
+        "type": "bool",
+        "class": "LoraArguments"
+      },
+      "pref_loss": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+        "line": 137,
+        "type": "Literal['sigmoid', 'hinge', 'ipo', 'kto_pair', 'orpo', 'simpo']",
+        "class": "RLHFArguments"
+      },
+      "pref_beta": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+        "line": 129,
+        "type": "float",
+        "class": "RLHFArguments"
+      },
+      "dpo_label_smoothing": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+        "line": 141,
+        "type": "float",
+        "class": "RLHFArguments"
+      }
+    }
+  },
+  "export_7b.yaml": {
+    "status": "static_fields_passed",
+    "framework_commit": "ca75f1edf3cb50343ed1c98605141c3e22075b5f",
+    "official_parser": "not_run",
+    "gpu_execution": "not_validated",
+    "field_evidence": {
+      "model_name_or_path": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+        "line": 33,
+        "type": "Optional[str]",
+        "class": "BaseModelArguments"
+      },
+      "model_revision": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+        "line": 78,
+        "type": "str",
+        "class": "BaseModelArguments"
+      },
+      "adapter_name_or_path": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+        "line": 39,
+        "type": "Optional[str]",
+        "class": "BaseModelArguments"
+      },
+      "template": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/data_args.py",
+        "line": 26,
+        "type": "Optional[str]",
+        "class": "DataArguments"
+      },
+      "finetuning_type": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+        "line": 411,
+        "type": "Literal['lora', 'freeze', 'full']",
+        "class": "FinetuningArguments"
+      },
+      "trust_remote_code": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+        "line": 170,
+        "type": "bool",
+        "class": "BaseModelArguments"
+      },
+      "export_dir": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+        "line": 275,
+        "type": "Optional[str]",
+        "class": "ExportArguments"
+      },
+      "export_size": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+        "line": 279,
+        "type": "int",
+        "class": "ExportArguments"
+      },
+      "export_device": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+        "line": 283,
+        "type": "Literal['cpu', 'auto']",
+        "class": "ExportArguments"
+      },
+      "export_legacy_format": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+        "line": 303,
+        "type": "bool",
+        "class": "ExportArguments"
+      }
+    }
+  },
+  "export_1_5b.yaml": {
+    "status": "static_fields_passed",
+    "framework_commit": "ca75f1edf3cb50343ed1c98605141c3e22075b5f",
+    "official_parser": "not_run",
+    "gpu_execution": "not_validated",
+    "field_evidence": {
+      "model_name_or_path": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+        "line": 33,
+        "type": "Optional[str]",
+        "class": "BaseModelArguments"
+      },
+      "model_revision": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+        "line": 78,
+        "type": "str",
+        "class": "BaseModelArguments"
+      },
+      "adapter_name_or_path": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+        "line": 39,
+        "type": "Optional[str]",
+        "class": "BaseModelArguments"
+      },
+      "template": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/data_args.py",
+        "line": 26,
+        "type": "Optional[str]",
+        "class": "DataArguments"
+      },
+      "finetuning_type": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+        "line": 411,
+        "type": "Literal['lora', 'freeze', 'full']",
+        "class": "FinetuningArguments"
+      },
+      "trust_remote_code": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+        "line": 170,
+        "type": "bool",
+        "class": "BaseModelArguments"
+      },
+      "export_dir": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+        "line": 275,
+        "type": "Optional[str]",
+        "class": "ExportArguments"
+      },
+      "export_size": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+        "line": 279,
+        "type": "int",
+        "class": "ExportArguments"
+      },
+      "export_device": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+        "line": 283,
+        "type": "Literal['cpu', 'auto']",
+        "class": "ExportArguments"
+      },
+      "export_legacy_format": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+        "line": 303,
+        "type": "bool",
+        "class": "ExportArguments"
+      }
+    }
+  },
+  "export_dpo_7b.yaml": {
+    "status": "static_fields_passed",
+    "framework_commit": "ca75f1edf3cb50343ed1c98605141c3e22075b5f",
+    "official_parser": "not_run",
+    "gpu_execution": "not_validated",
+    "field_evidence": {
+      "model_name_or_path": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+        "line": 33,
+        "type": "Optional[str]",
+        "class": "BaseModelArguments"
+      },
+      "adapter_name_or_path": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+        "line": 39,
+        "type": "Optional[str]",
+        "class": "BaseModelArguments"
+      },
+      "template": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/data_args.py",
+        "line": 26,
+        "type": "Optional[str]",
+        "class": "DataArguments"
+      },
+      "finetuning_type": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+        "line": 411,
+        "type": "Literal['lora', 'freeze', 'full']",
+        "class": "FinetuningArguments"
+      },
+      "trust_remote_code": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+        "line": 170,
+        "type": "bool",
+        "class": "BaseModelArguments"
+      },
+      "export_dir": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+        "line": 275,
+        "type": "Optional[str]",
+        "class": "ExportArguments"
+      },
+      "export_size": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+        "line": 279,
+        "type": "int",
+        "class": "ExportArguments"
+      },
+      "export_device": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+        "line": 283,
+        "type": "Literal['cpu', 'auto']",
+        "class": "ExportArguments"
+      },
+      "export_legacy_format": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+        "line": 303,
+        "type": "bool",
+        "class": "ExportArguments"
+      }
+    }
+  },
+  "export_dpo_1_5b.yaml": {
+    "status": "static_fields_passed",
+    "framework_commit": "ca75f1edf3cb50343ed1c98605141c3e22075b5f",
+    "official_parser": "not_run",
+    "gpu_execution": "not_validated",
+    "field_evidence": {
+      "model_name_or_path": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+        "line": 33,
+        "type": "Optional[str]",
+        "class": "BaseModelArguments"
+      },
+      "adapter_name_or_path": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+        "line": 39,
+        "type": "Optional[str]",
+        "class": "BaseModelArguments"
+      },
+      "template": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/data_args.py",
+        "line": 26,
+        "type": "Optional[str]",
+        "class": "DataArguments"
+      },
+      "finetuning_type": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/finetuning_args.py",
+        "line": 411,
+        "type": "Literal['lora', 'freeze', 'full']",
+        "class": "FinetuningArguments"
+      },
+      "trust_remote_code": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+        "line": 170,
+        "type": "bool",
+        "class": "BaseModelArguments"
+      },
+      "export_dir": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+        "line": 275,
+        "type": "Optional[str]",
+        "class": "ExportArguments"
+      },
+      "export_size": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+        "line": 279,
+        "type": "int",
+        "class": "ExportArguments"
+      },
+      "export_device": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+        "line": 283,
+        "type": "Literal['cpu', 'auto']",
+        "class": "ExportArguments"
+      },
+      "export_legacy_format": {
+        "file": "vendor/LlamaFactory/src/llamafactory/hparams/model_args.py",
+        "line": 303,
+        "type": "bool",
+        "class": "ExportArguments"
+      }
+    }
+  }
+}

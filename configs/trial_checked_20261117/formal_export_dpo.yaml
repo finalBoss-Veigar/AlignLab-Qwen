@@ -1,0 +1,9 @@
+model_name_or_path: runs/artifacts/trial_checked_20261117/formal/sft-merged
+adapter_name_or_path: runs/artifacts/trial_checked_20261117/formal/dpo
+template: qwen
+finetuning_type: lora
+trust_remote_code: false
+export_dir: runs/artifacts/trial_checked_20261117/formal/dpo-merged
+export_size: 5
+export_device: cpu
+export_legacy_format: false

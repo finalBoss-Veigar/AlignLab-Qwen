@@ -1,0 +1,2 @@
+# Linux NVIDIA only; own .venv-vllm. Not installed or GPU-validated here.
+vllm==0.8.5
